@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    cursor: auto;
 }
 html,
 body,
@@ -75,17 +76,14 @@ span {
     border: 2px solid white;
     border-radius: 500px;
     background-color: transparent;
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 .connexion:hover {
     background-color: white;
     color: black;
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 .inscription {
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 2px solid #ff8522;
     border-radius: 500px;
@@ -93,7 +91,6 @@ span {
 }
 .inscription:hover {
     background-color: transparent;
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 .main-landing {
@@ -246,7 +243,6 @@ fieldset {
     font-weight: 400;
 }
 .facebook:hover {
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
     color: #3b5998;
@@ -259,7 +255,6 @@ input[type=checkbox]+label {
     height: 20px;
     width: 20px;
     display: inline-flex;
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 1px solid #ff8522;
     border-radius: 5px;
@@ -270,8 +265,7 @@ input[type=checkbox]:checked+label {
     height: 20px;
     width: 20px;
     display: inline-flex;
-    padding: 0 0 0 0px;
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    padding: 0 0 0 0;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 .remember {
@@ -289,7 +283,6 @@ input[type=checkbox]:checked+label {
 }
 #submit-register {
     font-family: 'Raleway', sans-serif;
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 2px solid #ff8522;
     border-radius: 500px;
@@ -302,14 +295,12 @@ input[type=checkbox]:checked+label {
     font-weight: 400;
 }
 #submit-register:hover {
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
     color: #ff8522;
 }
 #submit-log {
     font-family: 'Raleway', sans-serif;
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 2px solid #ff8522;
     border-radius: 500px;
@@ -321,7 +312,6 @@ input[type=checkbox]:checked+label {
     font-size: 1em;
 }
 #submit-log:hover {
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
     color: #ff8522;
@@ -350,18 +340,21 @@ input[type=checkbox]:checked+label {
 }
 .user-account {
     margin-top: 10%;
+    margin-bottom: 10%;
 }
 .user-avatar {
     border-radius: 50%;
     height: 50px;
     width: auto;
     vertical-align: middle;
+
 }
 .user-name {
     display: inline;
     color: white;
     font-weight: 600;
     padding-left: 10px;
+    text-transform: capitalize;
 }
 .nav-menu {
     margin-top: 10%;
@@ -488,12 +481,10 @@ input[type="range"] {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8522), color-stop(100%, #e5771f));
     background-size: 50% 100%;
     background-repeat: no-repeat;
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 input[type="range"]:hover {
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: #ffffff;
 }
@@ -502,7 +493,6 @@ input[type="range"]::-webkit-slider-thumb {
     -moz-appearance: none;
     width: 0;
     height: 0;
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
 }
 .progressbar:hover input[type="range"]::-webkit-slider-thumb {
@@ -512,7 +502,6 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
     background: #fff;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
-    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
 }
 
@@ -550,21 +539,21 @@ input:focus {
 
 
 .btn-prev {
-    background-image: url('/images/prev.png');
+    background-image: url('../images/prev.png');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
 
 .btn-next {
-    background-image: url('/images/next.png');
+    background-image: url('../images/next.png');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
 
 .btn-plps {
-    background-image: url('/images/play.png');
+    background-image: url('../images/play.png');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -573,7 +562,7 @@ input:focus {
 
 .btn-mute {
     margin-left: 40px;
-    background-image: url('/images/sound.svg');
+    background-image: url('../images/sound.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;

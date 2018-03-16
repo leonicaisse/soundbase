@@ -15,8 +15,8 @@
                     chansons.push({
                         titre: "{{$c -> nom}}",
                         artiste: "{{$c -> utilisateur -> name}}",
-                        album: "Deuxieme album",
-                        pochette: "deuxieme_album.jpg",
+                        album: "variable album",
+                        pochette: "variable pochette",
                         fichier: "{{$c -> fichier}}",
                     });
                 </script>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="main-landing">
+    <div class="main-landing-black">
         <div class="main-connexion">
             <h1>Connectez-vous</h1>
             <form id="login" method="POST" action="{{ route('login') }}">

@@ -38,9 +38,7 @@
                                 </div>
                                 @endguest
                                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                                    <ul class="nav navbar-nav">
-                                        &nbsp;
-                                    </ul>
+
                                     @guest
                                         <nav class="header-nav">
                                             <ul>

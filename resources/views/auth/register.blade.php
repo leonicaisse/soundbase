@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="main-landing">
+<div class="main-landing-black">
         <div class="main-inscription">
             <h1>Inscrivez-vous en un clic</h1>
                     <form id="register" method="POST" action="{{ route('register') }}">

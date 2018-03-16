@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(rgb(24, 21, 62)0%, rgb(16, 16, 16) 85%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.main-header-home,
+#main-content-home,
+.main-player-home {
+    position: fixed;
+}
+.user-header {
+    width: 14vw;
+}
+.header-inner-home {
+    width: 90%;
+    margin: auto;
+}
+#main-content-home {
+    background-color: white;
+    margin: 0;
+    margin-left: 14vw;
+    width: 86vw;
+    height: 90vh;
+    overflow-y: scroll;
+    color: #101010;
+}
+#main-content-home a {
+    color: darkorange;
+}
+.main-player-home {
+    bottom: 0;
+    margin-left: 14vw;
+    height: 10vh;
+    width: 86vw;
+    background-color: rgb(16, 16, 16);
+}
+.chance {
+    font-size: 70pt;
+    color: red;
+    text-align: center;
+}
+h5 {
+    color: green;
+    text-align: center;
+}

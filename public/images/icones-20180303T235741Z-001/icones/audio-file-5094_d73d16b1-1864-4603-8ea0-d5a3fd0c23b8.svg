@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" height="64">
+  <title>Audio File</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer3"
+  fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M10 6H2v52h8"
+  stroke-linejoin="miter" stroke-linecap="round"></path>
+  <path data-name="layer2" d="M30 38h-4a4 4 0 1 0 4 4V20l16-4v22a4 4 0 1 1-4-4h4"
+  fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"
+  stroke-linecap="round"></path>
+  <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+  stroke-width="2" d="M10 6h52v52H10z" stroke-linejoin="miter" stroke-linecap="round"></path>
+</svg>

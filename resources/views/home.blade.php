@@ -1,0 +1,27 @@
+@extends('layouts.app')
+
+@section('content')
+    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    <body>
+    <div id="main-content-home">
+        <h1>Bonjour <span>{{ Auth::user()->name }}</span> ! Comment allez-vous ? <br/><span style="font-size : 72pt">[WIP]</span>
+        </h1>
+        <ul>
+            <b>Nouveautés</b>
+            <div id="chansons"></div>
+            <script>let chansons = [];</script>
+            @foreach($lastAll as $c)
+                <script>
+                    chansons.push({
+                        titre: "{{$c -> nom}}",
+                        artiste: "{{$c -> utilisateur -> name}}",
+                        album: "Deuxieme album",
+                        pochette: "deuxieme_album.jpg",
+                        fichier: "{{$c -> fichier}}",
+                    });
+                </script>
+            @endforeach
+        </ul>
+    </div>
+    </body>
+@endsection

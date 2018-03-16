@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="20" height="20">
+  <title>Import</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="2" d="M29.973 22V6H62v52H29.973V42.001"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+  <path data-name="layer1" fill="none" stroke="#ffffff" stroke-miterlimit="10"
+  stroke-width="5" d="M2 32l48.99-.003M37.979 43L50.99 31.997 37.979 21"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+</svg>

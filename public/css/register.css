@@ -1,0 +1,135 @@
+.main-inscription {
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    padding: 2em;
+}
+
+.main-inscription h1 {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+}
+
+
+.main-landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+}
+
+#login {
+    border: none;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 2px solid #ff8522;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+#name,
+#password,
+#mail,
+#confirm-mail {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    border: none;
+    padding-bottom: 0;
+    font-weight: 300;
+    width: 100%;
+}
+
+#last-field {
+    border-bottom: none;
+}
+
+.remember {
+    color: #717171;
+    font-weight: 300;
+}
+
+#submit {
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    border: 2px solid #ff8522;
+    border-radius: 500px;
+    background-color: #ff8522;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    color: white;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+#submit:hover {
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    background-color: white;
+    color: #ff8522;
+}
+
+.background {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.background:before {
+    border-top: 1px solid black;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+.double-line {
+    color: black;
+    background: #fff;
+    padding: 0 15px;
+    font-weight: 400;
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    border: 2px solid #3b5998;
+    border-radius: 500px;
+    background-color: #3b5998;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: 400;
+}
+
+.facebook:hover {
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    background-color: white;
+    color: #3b5998;
+}
+
+p {
+    text-align: center;
+}
+
+.link-orange {
+    text-decoration: none;
+    color: #ff8522;
+}

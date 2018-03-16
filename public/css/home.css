@@ -29,6 +29,7 @@ body {
     background-color: white;
     margin: 0;
     margin-left: 14vw;
+    padding-left: 30px;
     width: 86vw;
     height: 90vh;
     overflow-y: scroll;

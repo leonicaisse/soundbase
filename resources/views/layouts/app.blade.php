@@ -56,13 +56,14 @@
                                     @else
                                         <div class="user-account">
                                             <a href="#">
-                                                <img src="images/lol.jpg" class="user-avatar">
+                                                <img src="/images/face.png" class="user-avatar">
                                                 <h3 class="user-name"> {{ Auth::user()->name }}</h3>
                                             </a>
                                         </div>
                                         <div class="nav-menu">
                                             <ul>
                                                 <li>
+
                                                     <a href="{{ url('/home') }}" class="link-menu-home"
                                                        id="link-to-home">Accueil</a>
                                                 </li>
@@ -132,6 +133,7 @@
         <!-- Scripts -->
             <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
             <script src="{{ asset('js/app.js') }}"></script>
+
 
 </body>
 

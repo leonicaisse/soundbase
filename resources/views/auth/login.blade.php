@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
-    @section('content')
-    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
+@section('content')
     <div class="main-landing">
         <div class="main-connexion">
             <h1>Connectez-vous</h1>
@@ -17,7 +16,7 @@
                         </span>
                     @endif
                 </div>
-                <!--<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">-->
+            <!--<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">-->
                 <fieldset>
                     <input placeholder="Mot de passe*" type="password" name="password" id="password" tabindex="2" required>
                 </fieldset>
@@ -31,12 +30,13 @@
                     <label for="remember"></label>
                     <span class="remember">Se souvenir de moi</span>
                 </fieldset>
-                <button name="submit" type="submit" id="submit">Se connecter</button>
-                <h2 class="background"><span class="double-line">Ou</span></h2>
-                <a href="#" class="facebook">Connexion avec Facebook</a>
-                <p>Vous ne possèdez pas de compte ? <a href="{{ route('register') }}" class="link-orange">Inscription</a></p>
-                <a class="link-orange" href="{{ route('password.request') }}">Mot de passe oublié ?</a>
+                <button name="submit" type="submit" id="submit-log">Se connecter</button>
             </form>
+            <h2 class="background"><span class="double-line">Ou</span></h2>
+            <a href="#" class="facebook">Connexion avec Facebook</a>
+            <p class="p-center">Vous ne possèdez pas de compte ? <a href="{{ route('register') }}" class="link-orange">Inscription</a></p>
+            <a class="link-orange p-center" href="{{ route('password.request') }}">Mot de passe oublié ?</a>
+
         </div>
     </div>
 @endsection

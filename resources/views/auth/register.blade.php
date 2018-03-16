@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <link href="{{ asset('css/register.css') }}" rel="stylesheet">
+
 <div class="main-landing">
         <div class="main-inscription">
             <h1>Inscrivez-vous en un clic</h1>
@@ -44,7 +44,7 @@
                     <input placeholder="Confirmation mot de passe*" type="password" name="password_confirmation" id="password-confirm" tabindex="4" required>
                 </fieldset>
                          <fieldset id="last-field">    
-                    <button name="submit" type="submit" id="submit"><a class="register">S'inscrire</a></button>
+                    <button name="submit" type="submit" id="submit-register"><a class="register">S'inscrire</a></button>
                 </fieldset>
                     </form>
             <h2 class="background"><span class="double-line">Ou</span></h2>

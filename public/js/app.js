@@ -68,11 +68,11 @@ $('document').ready(function () {
     $('#btn-mute').on('click', function () {
         if (player.prop('muted')) {
             player[0].muted = false;
-            //change en mute issvm
+            $(this).css('backgroundImage', 'url("/images/sound.svg")');
             $('#slider-vol').value = player[0].volume * 100;
         } else {
             player[0].muted = true;
-            //change en unmute issvm
+            $(this).css('backgroundImage', 'url("/images/silent.svg")');
             $('#slider-vol').value = "0";
         }
     });

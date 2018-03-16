@@ -5,14 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'SoundBase') }}</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
@@ -107,21 +105,24 @@
             @auth
                 <div id="player-container" class="main-player-home player">
                     <div id="song-playing" class="song-playing">
-                        <img src="/images/no-song.jpg" class='chanson-pochette' width="75px"/><h1
+                        <img src="/images/no-song.jpg" class='chanson-pochette' width="75px"/>
+                        <h1
                                 class='chanson-titre'>SoundBase</h1>
                     </div>
-                    <audio id="audio-player" class="audio-player" controls src="" hidden></audio>
-                    <button id="btn-prev" class="btn-prev"></button>
-                    <button id="btn-plps" class="btn-plps"></button>
-                    <button id="btn-next" class="btn-next"></button>
-                    <div class="progressbar">
-                        <p id="current-time" class="current-time"></p>
-                        <input id="time-prog" type="range" min="0" max="2000" value="0" class="slider time-prog"/>
-                        <p id="duration" class="duration"></p>
-                    </div>
-                    <button id="btn-mute" class="btn-mute"></button>
-                    <div class="progressbar">
-                        <input id="slider-vol" type="range" min="0" max="100" value="80" class="slider slider-vol"/>
+                    <div class="player">
+                        <audio id="audio-player" class="audio-player" controls src="" hidden></audio>
+                        <button id="btn-prev" class="btn-prev"></button>
+                        <button id="btn-plps" class="btn-plps"></button>
+                        <button id="btn-next" class="btn-next"></button>
+                        <div class="progressbar">
+                            <p id="current-time" class="current-time"></p>
+                            <input id="time-prog" type="range" min="0" max="2000" value="0" class="slider time-prog"/>
+                            <p id="duration" class="duration"></p>
+                        </div>
+                        <button id="btn-mute" class="btn-mute"></button>
+                        <div class="progressbar">
+                            <input id="slider-vol" type="range" min="0" max="100" value="80" class="slider slider-vol"/>
+                        </div>
                     </div>
                 </div>
         @endauth

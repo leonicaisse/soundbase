@@ -4,9 +4,11 @@
 	 viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 </style>
 <title>Silent Mode</title>
 <desc>A line styled icon from Orion Icon Library.</desc>
 <path class="st0" d="M7.4,1.3L3.5,5.3H0.9c-0.2,0-0.4,0.2-0.4,0.4v2.6c0,0.2,0.2,0.4,0.4,0.4h2.6l3.9,3.9V1.3z"/>
-<path class="st0" d="M10.1,5.3l3.5,3.5 M13.6,5.3l-3.5,3.5"/>
+<path class="st1" d="M9.1,4.1c2.9,0,2.7,5.9,0.1,5.9"/>
+<path class="st1" d="M10.1,2.5c4.3,0,4.1,9,0.1,9"/>
 </svg>

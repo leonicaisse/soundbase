@@ -1,4 +1,4 @@
-    * {
+* {
     box-sizing: border-box;
 }
 html,
@@ -75,14 +75,17 @@ span {
     border: 2px solid white;
     border-radius: 500px;
     background-color: transparent;
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 .connexion:hover {
     background-color: white;
     color: black;
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 .inscription {
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 2px solid #ff8522;
     border-radius: 500px;
@@ -90,6 +93,7 @@ span {
 }
 .inscription:hover {
     background-color: transparent;
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 .main-landing {
@@ -189,8 +193,9 @@ fieldset {
 }
 #name,
 #password,
-#mail,
-#confirm-mail {
+#email,
+#confirm-mail,
+#password-confirm{
     font-family: 'Raleway', sans-serif;
     font-style: italic;
     border: none;
@@ -241,6 +246,7 @@ fieldset {
     font-weight: 400;
 }
 .facebook:hover {
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
     color: #3b5998;
@@ -253,6 +259,7 @@ input[type=checkbox]+label {
     height: 20px;
     width: 20px;
     display: inline-flex;
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 1px solid #ff8522;
     border-radius: 5px;
@@ -264,6 +271,7 @@ input[type=checkbox]:checked+label {
     width: 20px;
     display: inline-flex;
     padding: 0 0 0 0px;
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 .remember {
@@ -281,6 +289,7 @@ input[type=checkbox]:checked+label {
 }
 #submit-register {
     font-family: 'Raleway', sans-serif;
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 2px solid #ff8522;
     border-radius: 500px;
@@ -293,12 +302,14 @@ input[type=checkbox]:checked+label {
     font-weight: 400;
 }
 #submit-register:hover {
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
     color: #ff8522;
 }
 #submit-log {
     font-family: 'Raleway', sans-serif;
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 2px solid #ff8522;
     border-radius: 500px;
@@ -310,10 +321,14 @@ input[type=checkbox]:checked+label {
     font-size: 1em;
 }
 #submit-log:hover {
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
     color: #ff8522;
 }
+
+
+
 .main-header-home {
     margin-left: 2%;
     min-width: 15%;
@@ -327,6 +342,7 @@ input[type=checkbox]:checked+label {
 .site-title-home {
     font-weight: 400;
     font-size: 1.4em;
+    color: #fff;
     display: inline;
 }
 .site-title-home span {
@@ -349,7 +365,6 @@ input[type=checkbox]:checked+label {
 }
 .nav-menu {
     margin-top: 10%;
-    /*    width : 80%;*/
     margin: auto;
 }
 .nav-menu ul {
@@ -364,6 +379,14 @@ input[type=checkbox]:checked+label {
     font-size: 1.2em;
 }
 .link-menu-home:focus {
+    color: #ff8522;
+}
+
+.link-menu-home:hover{
+    color: #ff8522;
+}
+
+.link-menu-home:active {
     color: #ff8522;
 }
 #link-to-home::before {
@@ -414,126 +437,144 @@ input[type=checkbox]:checked+label {
 }
 
 /*------- PLAYER --------------*/
-    .song-playing {
-        width: 600px; /* Just a sample value */
-    }
 
-    .chanson-pochette {
-        width: 75px;
-        float: left;
-    }
+.chanson-pochette {
+    height: 100%;
+    width: auto;
+    float: left;
+}
 
-    .chanson-titre, .chanson-artiste {
-        margin-left: 100px;
-        width: 380px;
-    }
+.chanson-titre, .chanson-artiste {
+    margin-left: 100px;
 
+}
 
-
-    /* Clément Modif */
-
-    .chanson {
-        color: white;
-        text-decoration: none;
-    }
-
-    .player {
-        display: flex;
-        flex-direction: row;
-        height: 200px;
-    }
-
-    .progressbar {
-        align-content: center;
-        justify-content: center;
-        display: flex;
-    }
-
-    input[type="range"] {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        border-radius: 26px;
-        height: 3px;
-        background-color: #858585;
-        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8522), color-stop(100%, #e5771f));
-        background-size: 50% 100%;
-        background-repeat: no-repeat;
-        transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-    }
-
-    input[type="range"]:hover {
-        transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-        background-color: #ffffff;
-    }
-    input[type="range"]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        width: 0;
-        height: 0;
-        transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
-    }
-    .progressbar:hover input[type="range"]::-webkit-slider-thumb {
-        width:15px;
-        height: 15px;
-        border: 1px solid #fff;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
-        transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
-    }
-
-    .btn-prev,
-    .btn-next,
-    .btn-plps,
-    .btn-mute
-    {
-        display: inline-block;
-        height: 16px;
-        padding: 0;
-        margin: 0 8px;
-        vertical-align: top;
-        width: 16px;
-        background-color: transparent;
-        border: none;
-    }
-    button:focus {
-        outline:0;
-    }
-
-    input:focus {
-        outline: 0;
-    }
-
-    .time-prog {
-        width: 600px;
-    }
-
-    .slider-vol {
-        width: 80px;
-    }
+.chanson-titre {
+    text-transform: capitalize;
+}
 
 
-    .btn-prev {
-        background-image: url('/images/prev.png');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
-    .btn-next {
-        background-image: url('/images/next.png');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
-    .btn-plps {
-        background-image: url('/images/play.png');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+/* Clément Modif */
 
-    .btn-mute {
-        margin-left: 40px;
-        background-image: url('/images/silent.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+.chanson {
+    color: white;
+    text-decoration: none;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.player p {
+    margin : 0 15px;
+}
+
+.progressbar {
+    display: flex;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 26px;
+    height: 3px;
+    cursor: pointer;
+    background-color: #858585;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8522), color-stop(100%, #e5771f));
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+input[type="range"]:hover {
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    background-color: #ffffff;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 0;
+    height: 0;
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
+}
+.progressbar:hover input[type="range"]::-webkit-slider-thumb {
+    width:15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
+}
+
+.btn-prev,
+.btn-next,
+.btn-plps,
+.btn-mute
+{
+    display: inline-block;
+    height: 16px;
+    padding: 0;
+    margin: 0 8px;
+    vertical-align: top;
+    width: 16px;
+    background-color: transparent;
+    border: none;
+}
+button:focus {
+    outline:0;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.time-prog {
+    margin-top: 10px;
+    width: 600px;
+}
+
+.slider-vol {
+    width: 80px;
+    margin-top: 5px;
+}
+
+
+.btn-prev {
+    background-image: url('/images/prev.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btn-next {
+    background-image: url('/images/next.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btn-plps {
+    background-image: url('/images/play.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+}
+
+.btn-mute {
+    margin-left: 40px;
+    background-image: url('/images/sound.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}

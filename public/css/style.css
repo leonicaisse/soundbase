@@ -53,6 +53,7 @@ span {
     font-weight: 400;
     font-size: 1.4em;
     cursor: pointer;
+    display:inline-block;
 }
 .site-title span {
     font-weight: 600;
@@ -159,6 +160,7 @@ span {
 .home {
     text-decoration: none;
     color: white;
+    display:inline-block;
 }
 .main-inscription {
     margin: auto;
@@ -391,6 +393,7 @@ input[type=checkbox]:checked+label {
     color: #fff;
     display: inline;
     cursor: pointer;
+    display:inline-block;
 }
 .site-title-home span {
     font-weight: 600;

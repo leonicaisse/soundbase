@@ -25,14 +25,14 @@
                 @guest
                     <div class="header-inner">
                         <div class="header-logo">
-                            <a class="navbar-brand" href="{{ url('/') }}"><img src="images/logo.png" alt="SoundBase"
+                            <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('images/logo.png') }}" alt="SoundBase"
                                                                                width="50px" height="auto"></a>
                         </div>
                         <a href="{{ url('/') }}" class="home"><h1 class="site-title">Soun<span>dB</span>ase</h1></a>
                         @else
                             <div class="header-inner-home">
                                 <div class="header-logo-home">
-                                    <a href="{{ url('/home') }}"><img src="images/logo.png" alt="SoundBase" width="50px"
+                                    <a href="{{ url('/home') }}"><img src="{{ asset('images/logo.png') }}" alt="SoundBase" width="50px"
                                                                       height="auto">
                                         <h1 class="site-title-home">Soun<span>dB</span>ase</h1></a>
                                 </div>
@@ -54,7 +54,7 @@
                                     @else
                                         <div class="user-account">
                                             <a href="#">
-                                                <img src="/images/face.png" class="user-avatar">
+                                                <img src="{{ asset('images/face.png') }}" class="user-avatar">
                                                 <h3 class="user-name"> {{ Auth::user()->name }}</h3>
                                             </a>
                                         </div>
@@ -104,7 +104,7 @@
             @auth
                 <div id="player-container" class="main-player-home player">
                     <div id="song-playing" class="song-playing">
-                        <img src="/images/no-song.jpg" class='chanson-pochette' width="75px"/>
+                        <img src="{{ asset('images/no-song.jpg') }}" class='chanson-pochette' width="75px"/>
                         <h1
                                 class='chanson-titre'>SoundBase</h1>
                     </div>

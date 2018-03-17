@@ -295,6 +295,11 @@ input[type=checkbox]:checked+label {
     text-decoration: none;
     color: #ff8522;
 }
+
+.link-orange p {
+    cursor: pointer;
+}
+
 #submit-register {
     font-family: 'Raleway', sans-serif;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
@@ -328,6 +333,26 @@ input[type=checkbox]:checked+label {
     cursor: pointer;
 }
 #submit-log:hover {
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    background-color: white;
+    color: #ff8522;
+}
+
+#submit-reset {
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    border: 2px solid #ff8522;
+    border-radius: 500px;
+    background-color: #ff8522;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: white;
+    float: right;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#submit-reset:hover {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
     color: #ff8522;

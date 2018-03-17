@@ -45,12 +45,18 @@ span {
 .header-logo {
     width: 70px;
 }
+
+.header-logo a img {
+    cursor: pointer;
+}
 .site-title {
     font-weight: 400;
     font-size: 1.4em;
+    cursor: pointer;
 }
 .site-title span {
     font-weight: 600;
+    cursor: pointer;
 }
 .header-nav ul,
 .header-nav li {
@@ -259,6 +265,7 @@ input[type=checkbox]+label {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 1px solid #ff8522;
     border-radius: 5px;
+    cursor: pointer;
 }
 input[type=checkbox]:checked+label {
     background: #ff8522;
@@ -274,6 +281,10 @@ input[type=checkbox]:checked+label {
     font-weight: 300;
     margin-left: 2%;
     margin-bottom: 2%;
+}
+
+.remember label {
+    cursor: pointer;
 }
 .p-center {
     text-align: center;
@@ -294,6 +305,7 @@ input[type=checkbox]:checked+label {
     width: 100%;
     font-size: 1em;
     font-weight: 400;
+    cursor: pointer;
 }
 #submit-register:hover {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
@@ -311,6 +323,7 @@ input[type=checkbox]:checked+label {
     color: white;
     float: right;
     font-size: 1em;
+    cursor: pointer;
 }
 #submit-log:hover {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
@@ -368,14 +381,20 @@ input[type=checkbox]:checked+label {
     border-bottom: 2px solid #ff8522;
     width: 70%;
 }
+
+.header-logo-home a img {
+    cursor: pointer;
+}
 .site-title-home {
     font-weight: 400;
     font-size: 1.4em;
     color: #fff;
     display: inline;
+    cursor: pointer;
 }
 .site-title-home span {
     font-weight: 600;
+    cursor: pointer;
 }
 .user-account {
     margin-top: 10%;

@@ -29,8 +29,9 @@
                     <input type="checkbox" name="remember" id="remember" placeholder="Se souvenir de moi" {{ old('remember') ? 'checked' : '' }}>
                     <label for="remember"></label>
                     <span class="remember">Se souvenir de moi</span>
+                    <button name="submit" type="submit" id="submit-log">Se connecter</button>
                 </fieldset>
-                <button name="submit" type="submit" id="submit-log">Se connecter</button>
+
             </form>
             <h2 class="background"><span class="double-line">Ou</span></h2>
             <a href="#" class="facebook">Connexion avec Facebook</a>

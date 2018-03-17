@@ -49,7 +49,7 @@
                     </form>
             <h2 class="background"><span class="double-line">Ou</span></h2>
             <a class="facebook">Inscription avec Facebook</a>
-            <p>Vous possèdez déjà un compte ? <a href="{{ route('login') }}" class="link-orange">Connexion</a></p>
+            <p class="p-center">Vous possèdez déjà un compte ? <a href="{{ route('login') }}" class="link-orange">Connexion</a></p>
     </div>
 </div>
 @endsection

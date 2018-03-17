@@ -45,12 +45,3 @@ body {
     width: 86vw;
     background-color: rgb(16, 16, 16);
 }
-.chance {
-    font-size: 70pt;
-    color: red;
-    text-align: center;
-}
-h5 {
-    color: green;
-    text-align: center;
-}

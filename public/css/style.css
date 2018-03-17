@@ -408,6 +408,7 @@ input[type=checkbox]:checked+label {
     height: 50px;
     width: auto;
     vertical-align: middle;
+    cursor: pointer;
 
 }
 .user-name {
@@ -416,7 +417,15 @@ input[type=checkbox]:checked+label {
     font-weight: 600;
     padding-left: 10px;
     text-transform: capitalize;
+    cursor: pointer;
+    transition: color 300ms ease-in-out;
 }
+
+.user-name:hover {
+    transition: color 300ms ease-in-out;
+    color: #ff8522;
+}
+
 .nav-menu {
     margin-top: 10%;
     margin: auto;
@@ -515,6 +524,15 @@ input[type=checkbox]:checked+label {
 .chanson {
     color: white;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.chanson b {
+    cursor: pointer;
+}
+
+.chanson em {
+    cursor: pointer;
 }
 
 .player {

@@ -40,8 +40,14 @@ body {
 }
 .main-player-home {
     bottom: 0;
-    margin-left: 18vw;
+    margin-left: 22vw;
     height: 10vh;
     width: 86vw;
     background-color: rgb(16, 16, 16);
+}
+
+.home-title {
+    color: #ff8522;
+    border-bottom: 2px solid #18153E;
+    display: inline-block;
 }

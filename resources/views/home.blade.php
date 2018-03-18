@@ -7,7 +7,7 @@
         <h1>Bonjour <span>{{ Auth::user()->name }}</span> ! Comment allez-vous ? <br/><span style="font-size : 72pt">[WIP]</span>
         </h1>
         <ul>
-            <b>Nouveautés</b>
+            <h2 class="home-title">Nouveautés</h2>
             <div id="chansons"></div>
             <script>let chansons = [];</script>
             @foreach($lastAll as $c)

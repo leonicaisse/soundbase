@@ -27,7 +27,7 @@ $('document').ready(function () {
         player[0].play();
         $('#btn-plps').css('backgroundImage', 'url("/images/pause.png")');
         $('#song-playing').html(
-            `<img src="/images/pochettes/${pochette}" class='chanson-pochette' width="75px"/><h1 class='chanson-titre'>${titre}</h1><h3 class='chanson-artiste'>${artiste} – <em>${album}</em></h3>`
+            `<img src="/images/pochettes/${pochette}" class='chanson-pochette' width="75px"/><h3 class='chanson-titre'>${titre}</h3><h3 class='chanson-artiste'>${artiste} <em>${album}</em></h3>`
         );
     });
 

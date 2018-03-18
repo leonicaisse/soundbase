@@ -36,7 +36,7 @@
             <h2 class="background"><span class="double-line">Ou</span></h2>
             <a href="#" class="facebook">Connexion avec Facebook</a>
             <p class="p-center">Vous ne possèdez pas de compte ? <a href="{{ route('register') }}" class="link-orange">Inscription</a></p>
-            <a class="link-orange" href="{{ route('password.request') }}"><p class="p-center">Mot de passe oublié ?</p></a>
+            <p class="p-center"><a class="link-orange" href="{{ route('password.request') }}">Mot de passe oublié ?</a></p>
 
         </div>
     </div>

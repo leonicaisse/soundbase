@@ -200,6 +200,7 @@ fieldset {
 #name,
 #password,
 #email,
+#email-reset,
 #confirm-mail,
 #password-confirm{
     font-family: 'Raleway', sans-serif;
@@ -294,10 +295,28 @@ input[type=checkbox]:checked+label {
 .link-orange {
     text-decoration: none;
     color: #ff8522;
+    transition: all 300ms ease-in-out;
+    border-bottom:1px solid transparent;
+}
+
+
+.link-orange:hover{
+    color: #18153E;
+    transition: all 300ms ease-in-out;
+    border-bottom:2px solid #ff8522;
+
 }
 
 .link-orange p {
     cursor: pointer;
+    transition: all 300ms ease-in-out;
+    border-bottom:1px solid transparent;
+}
+
+.link-orange p:hover {
+    color: #18153E;
+    transition: all 300ms ease-in-out;
+    border-bottom:2px solid #ff8522;
 }
 
 #submit-register {
@@ -347,7 +366,6 @@ input[type=checkbox]:checked+label {
     text-transform: uppercase;
     padding: 5px 10px;
     color: white;
-    float: right;
     font-size: 1em;
     cursor: pointer;
 }
@@ -356,6 +374,10 @@ input[type=checkbox]:checked+label {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
     color: #ff8522;
+}
+
+.reset-center {
+    text-align: center;
 }
 
 .choose-file {
@@ -464,13 +486,16 @@ input[type=checkbox]:checked+label {
 .link-menu-home {
     text-decoration: none;
     color: white;
+    transition: color 300ms ease-in-out;
     font-size: 1.2em;
 }
 .link-menu-home:focus {
     color: #ff8522;
+    transition: color 300ms ease-in-out;
 }
 
 .link-menu-home:hover{
+    transition: color 300ms ease-in-out;
     color: #ff8522;
 }
 

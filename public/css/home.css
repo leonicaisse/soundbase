@@ -46,8 +46,17 @@ body {
     background-color: rgb(16, 16, 16);
 }
 
+.main-title-home {
+    text-align: center;
+}
+
 .home-title {
     color: #ff8522;
     border-bottom: 2px solid #18153E;
     display: inline-block;
+}
+
+#content-home {
+    margin-left: 10%;
+    margin-right: 10%;
 }

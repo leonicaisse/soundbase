@@ -2,6 +2,7 @@
 
 
 $('document').ready(function () {
+
     let player = $('#audio-player');
     player[0].volume = '0.8';
     //RIEN AVANT

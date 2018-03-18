@@ -429,7 +429,8 @@ input[type=checkbox]:checked+label {
 }
 .header-logo-home {
     border-bottom: 2px solid #ff8522;
-    width: 70%;
+    width: 90%;
+    margin-top: 10%;
 }
 
 .header-logo-home a img {
@@ -448,8 +449,8 @@ input[type=checkbox]:checked+label {
     cursor: pointer;
 }
 .user-account {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 .user-avatar {
     border-radius: 50%;
@@ -482,13 +483,14 @@ input[type=checkbox]:checked+label {
     list-style: none;
 }
 .nav-menu ul li {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 .link-menu-home {
     text-decoration: none;
     color: white;
     transition: color 300ms ease-in-out;
     font-size: 1.2em;
+
 }
 .link-menu-home:focus {
     color: #ff8522;
@@ -618,6 +620,7 @@ input[type=checkbox]:checked+label {
     cursor: pointer;
     color: #000;
     font-style: normal;
+    line-height: 0.8;
 }
 
 .player {

@@ -588,6 +588,25 @@ input[type=checkbox]:checked+label {
     color: white;
     text-decoration: none;
     cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.chanson img {
+    cursor: pointer;
+}
+
+.chanson-folder {
+    display: flex;
+    flex-direction: row;
+}
+
+.chanson-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-top: 20px;
 }
 
 .chanson b {

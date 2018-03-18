@@ -10,7 +10,7 @@ $('document').ready(function () {
 
     $.each(chansons, function (key, chanson) {
         //console.log(chanson.titre+' | '+chanson.artiste+' | '+chanson.album+' | '+chanson.pochette+' | '+chanson.fichier);
-        $('#chansons').append(`<br /><a class="chanson" href="#" data-titre="${chanson.titre}" data-artiste="${chanson.artiste}" data-album="${chanson.album}" data-pochette="${chanson.pochette}" data-fichier="${chanson.fichier}" data-key="${key}"><b>${chanson.titre}</b> - <em>${chanson.artiste}</em></a>`);
+        $('#chansons').append(`<br /><div class="chanson-list"><p><a class="chanson" href="#" data-titre="${chanson.titre}" data-artiste="${chanson.artiste}" data-album="${chanson.album}" data-pochette="${chanson.pochette}" data-fichier="${chanson.fichier}" data-key="${key}"><img src="http://localhost:8000/images/no-song.jpg" style="width: 150px;height: 150px"/> <b>${chanson.titre}</b><em>${chanson.artiste}</em></a></p></div>`);
     });
 
     $('#chansons').on('click', 'a.chanson', function (e) {

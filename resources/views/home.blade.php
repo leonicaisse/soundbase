@@ -8,7 +8,7 @@
         </h1>
         <ul>
             <h2 class="home-title">Nouveautés</h2>
-            <div id="chansons"></div>
+            <div id="chansons" class="chanson-folder"></div>
             <script>let chansons = [];</script>
             @foreach($lastAll as $c)
                 <script>

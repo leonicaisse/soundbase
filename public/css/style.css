@@ -304,6 +304,7 @@ input[type=checkbox]:checked+label {
     color: #18153E;
     transition: all 300ms ease-in-out;
     border-bottom:2px solid #ff8522;
+    font-weight: 800;
 
 }
 
@@ -563,7 +564,19 @@ input[type=checkbox]:checked+label {
 }
 
 .chanson-titre {
-    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-top: 15px;
+    line-height: 1.2;
+}
+
+.chanson-artiste {
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+.chanson-artiste em {
+    display: none;
 }
 
 
@@ -579,10 +592,13 @@ input[type=checkbox]:checked+label {
 
 .chanson b {
     cursor: pointer;
+    color: #000;
 }
 
 .chanson em {
     cursor: pointer;
+    color: #000;
+    font-style: normal;
 }
 
 .player {

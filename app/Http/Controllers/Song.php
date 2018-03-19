@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Chanson;
+use Illuminate\Support\Facades\Auth;
 
 
 class Song extends Controller
@@ -15,7 +16,16 @@ class Song extends Controller
 
     public function create(Request $request)
     {
-        print_r($_FILES);
-        die(1);
+        if ($request->hasFile('chanson') && $request->file('chanson')->isValid()) {
+            $c = new Chanson();
+            $c->nom = $request->input('nom');
+            $c->style = $request->input('style');
+            $c->utilisateur_id = Auth::id();
+
+            $c->fichier = $request->file('chanson')->store('public/audio/' . Auth::id());
+            $c->fichier = str_replace("public/", "storage/", $c->fichier);
+            $c->save();
+        }
+        return redirect("/home");
     }
 }

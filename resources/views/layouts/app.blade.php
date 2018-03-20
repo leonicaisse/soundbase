@@ -25,14 +25,16 @@
                 @guest
                     <div class="header-inner">
                         <div class="header-logo">
-                            <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('images/logo.png') }}" alt="SoundBase"
+                            <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('images/logo.png') }}"
+                                                                               alt="SoundBase"
                                                                                width="50px" height="auto"></a>
                         </div>
                         <a href="{{ url('/') }}" class="home"><h1 class="site-title">Soun<span>dB</span>ase</h1></a>
                         @else
                             <div class="header-inner-home">
                                 <div class="header-logo-home">
-                                    <a href="{{ url('/home') }}"><img src="{{ asset('images/logo.png') }}" alt="SoundBase" width="auto"
+                                    <a href="{{ url('/home') }}"><img src="{{ asset('images/logo.png') }}"
+                                                                      alt="SoundBase" width="auto"
                                                                       height="20px">
                                         <h1 class="site-title-home">Soun<span>dB</span>ase</h1></a>
                                 </div>
@@ -60,6 +62,12 @@
                                         </div>
                                         <div class="nav-menu">
                                             <ul>
+                                                <li>
+                                                    <form id="search" class="search">
+                                                        <input type="text" id="input-src" class="input-src" placeholder="Rechercher des bails">
+                                                        <button type="submit" id="btn-src" class="btn-src"></button>
+                                                    </form>
+                                                </li>
                                                 <li>
 
                                                     <a href="{{ url('/home') }}" class="link-menu-home"

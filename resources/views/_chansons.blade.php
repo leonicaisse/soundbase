@@ -1,5 +1,4 @@
 <ul>
-    <h2 class="home-title">Populaires</h2>
     <div id="chansons" class="chanson-folder"></div>
     <script>let chansons = [];</script>
     @foreach($chansons as $c)

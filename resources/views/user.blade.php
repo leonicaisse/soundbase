@@ -19,6 +19,7 @@
             @endauth
         </div>
         <div id="content-home">
+            <h2 class="home-title">Ses chansons</h2>
             @include('_chansons', ['chansons' => $utilisateur -> chansons])
         </div>
     </div>

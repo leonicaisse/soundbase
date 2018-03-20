@@ -9,6 +9,7 @@
             </h1>
         </div>
         <div id="content-home">
+            <h2 class="home-title">Toutes</h2>
             @include('_chansons', ['chansons' => $lastAll])
         </div>
     </div>

@@ -137,6 +137,11 @@ $('document').ready(function () {
         timeProg.attr("max", $('#time-prog').attr('max'));
         timeProg.attr("max", this.duration);
     });
+
+    $('#search').submit(function (e) {
+        e.preventDefault();
+        window.location.href = '/recherche/'+e.target.elements[0].value;
+    });
     //RIEN APRES
 });
 

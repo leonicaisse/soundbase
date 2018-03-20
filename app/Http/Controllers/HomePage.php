@@ -35,4 +35,11 @@ class HomePage extends Controller
         Auth::user()->jeLesSuis()->toggle($id);
         return back();
     }
+
+    public function recherche($search)
+    {
+        $users = User::whereRaw("name LIKE CONCAT(?, '%')", [$search])->get();
+        $chansons = Chanson::whereRaw("nom LIKE CONCAT(?, '%')", [$search])->get();
+        return view('recherche', ['utilisateurs' => $users, 'chansons' => $chansons, 'recherche' => $search]);
+    }
 }

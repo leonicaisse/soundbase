@@ -11,7 +11,7 @@ $('document').ready(function () {
 
     $.each(chansons, function (key, chanson) {
         //console.log(chanson.titre+' | '+chanson.artiste+' | '+chanson.album+' | '+chanson.pochette+' | '+chanson.fichier);
-        $('#chansons').append(`<br /><div class="chanson-list"><p><a class="chanson" href="#" data-titre="${chanson.titre}" data-artiste="${chanson.artiste}" data-album="${chanson.album}" data-pochette="${chanson.pochette}" data-fichier="${chanson.fichier}" data-key="${key}"><img src="http://localhost:8000/images/no-song.jpg" style="width: 150px;height: 150px"/> <b>${chanson.titre}</b><em>${chanson.artiste}</em></a></p></div>`);
+        $('#chansons').append(`<br /><div class="chanson-list"><p><a class="chanson" href="#" data-titre="${chanson.titre}" data-artiste="${chanson.artiste}" data-album="${chanson.album}" data-pochette="${chanson.pochette}" data-fichier="${chanson.fichier}" data-key="${key}"><img src="http://localhost:8000/images/no-song.jpg" style="width: 150px;height: 150px"/> <b>${chanson.titre}</b><a href="/user/${chanson.artiste_id}">${chanson.artiste}</a></p></div>`);
     });
 
     $('#chansons').on('click', 'a.chanson', function (e) {
@@ -23,7 +23,7 @@ $('document').ready(function () {
         let fichier = $(this).attr('data-fichier');
         playingKey = $(this).attr('data-key');
 
-        player.attr('src', '/audio/' + fichier);
+        player.attr('src', fichier);
         player[0].load();
         player[0].play();
         $('#btn-plps').css('backgroundImage', 'url("/images/pause.png")');

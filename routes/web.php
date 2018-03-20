@@ -20,5 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomePage@index')->middleware('auth');
 Route::get('/upload_song', 'Song@upload')->middleware('auth');
 Route::post('/create-song', 'Song@create')->middleware('auth');
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/user/{id}','HomePage@user')->where('id','[0-9]+');
 //Route::get('/musique','MusiquesList@show');

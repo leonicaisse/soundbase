@@ -198,8 +198,6 @@ fieldset {
     padding-left: 0;
 }
 #name,
-#style,
-#song-name,
 #password,
 #email,
 #email-reset,
@@ -212,6 +210,55 @@ fieldset {
     font-weight: 300;
     width: 100%;
 }
+
+#song-name,
+#style,
+#song-file-label{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    border: none;
+    padding-bottom: 0;
+    font-weight: 300;
+    width: 100%;
+    color: #8e8e8e;
+    font-size: 12pt;
+    background-color: #f5f5f5;
+}
+
+#song-file-label {
+    cursor: pointer;
+}
+
+#choose-image-label {
+    color: white;
+    width: 266px;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgb(24, 21, 62)35%, rgb(96, 95, 238) 85%);
+
+}
+
+#choose-file,
+#choose-image{
+    display: none;
+}
+
+.blue-title {
+    color: #18153e;
+}
+
+.italic-paragraph {
+    text-align: center;
+    font-size: 0.6em;
+    font-style: italic;
+}
+
+
+
 #last-field {
     border-bottom: none;
 }
@@ -299,6 +346,7 @@ input[type=checkbox]:checked+label {
     color: #ff8522;
     transition: all 300ms ease-in-out;
     border-bottom:1px solid transparent;
+    cursor: pointer;
 }
 
 
@@ -383,24 +431,11 @@ input[type=checkbox]:checked+label {
     text-align: center;
 }
 
-.choose-file {
-    font-family: 'Raleway', sans-serif;
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-    border: 2px solid #ff8522;
-    border-radius: 500px;
-    background-color: #ff8522;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    color: white;
-    float: right;
-    font-size: 1em;
+
+.button-submit {
+    text-align: center;
 }
 
-.choose-file:hover{
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-    background-color: white;
-    color: #ff8522;
-}
 
 .upload-file {
     font-family: 'Raleway', sans-serif;
@@ -409,10 +444,11 @@ input[type=checkbox]:checked+label {
     border-radius: 500px;
     background-color: #ff8522;
     text-transform: uppercase;
-    padding: 5px 10px;
+    padding: 10px 30px;
     color: white;
-    float: right;
-    font-size: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 .upload-file:hover {
@@ -420,6 +456,7 @@ input[type=checkbox]:checked+label {
     background-color: white;
     color: #ff8522;
 }
+
 
 
 
@@ -443,7 +480,6 @@ input[type=checkbox]:checked+label {
     font-weight: 400;
     font-size: 1.4em;
     color: #fff;
-    display: inline;
     cursor: pointer;
     display:inline-block;
     padding-left: 10px;
@@ -469,7 +505,6 @@ input[type=checkbox]:checked+label {
     color: white;
     font-weight: 600;
     padding-left: 10px;
-    text-transform: capitalize;
     cursor: pointer;
     transition: color 300ms ease-in-out;
 }
@@ -606,12 +641,13 @@ input[type=checkbox]:checked+label {
 .chanson-folder {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .chanson-list {
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    padding-left: 15px;
     margin-top: 20px;
 }
 
@@ -737,4 +773,20 @@ input:focus {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+}
+
+.grey-background{
+    padding: 60px;
+    background-color: #f5f5f5;
+    display: flex;
+}
+
+.grey-background fieldset {
+    margin-right: 15%;
+}
+
+.form-upload-left{
+    width: 40%;
+    position: relative;
+    text-align: center;
 }

@@ -32,8 +32,8 @@
                         @else
                             <div class="header-inner-home">
                                 <div class="header-logo-home">
-                                    <a href="{{ url('/home') }}"><img src="{{ asset('images/logo.png') }}" alt="SoundBase" width="50px"
-                                                                      height="auto">
+                                    <a href="{{ url('/home') }}"><img src="{{ asset('images/logo.png') }}" alt="SoundBase" width="auto"
+                                                                      height="20px">
                                         <h1 class="site-title-home">Soun<span>dB</span>ase</h1></a>
                                 </div>
                                 @endguest

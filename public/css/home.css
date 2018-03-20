@@ -34,9 +34,6 @@ body {
     overflow-y: scroll;
     color: #101010;
 }
-#main-content-home a {
-    color: darkorange;
-}
 .main-player-home {
     bottom: 0;
     margin-left: 22vw;
@@ -53,8 +50,8 @@ body {
 }
 
 #content-home {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .welcome-home {

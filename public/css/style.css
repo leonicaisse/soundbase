@@ -238,7 +238,7 @@ fieldset {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(rgb(24, 21, 62)35%, rgb(96, 95, 238) 85%);
+    background: linear-gradient(rgb(24, 21, 62)0%, rgb(16, 16, 16) 85%);
 
 }
 

@@ -53,7 +53,7 @@
                                         </nav>
                                     @else
                                         <div class="user-account">
-                                            <a href="#">
+                                            <a href="/user/{{Auth::user()->id}}">
                                                 <img src="{{ asset('images/face.png') }}" class="user-avatar">
                                                 <h3 class="user-name"> {{ Auth::user()->name }}</h3>
                                             </a>

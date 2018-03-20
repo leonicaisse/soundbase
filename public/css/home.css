@@ -68,3 +68,12 @@ body {
     padding: 37px 80px;
     font-weight: 400;;
 }
+
+.chanson-list p {
+    display: flex;
+    flex-direction: column;
+}
+
+.chanson-author {
+    color: black;
+}

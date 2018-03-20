@@ -9,7 +9,7 @@
             </h1>
         </div>
         <div id="content-home">
-            @include('_chansons', ['chansons' => $lastAll]);
+            @include('_chansons', ['chansons' => $lastAll])
         </div>
     </div>
     </body>

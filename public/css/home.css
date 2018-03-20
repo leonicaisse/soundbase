@@ -29,7 +29,6 @@ body {
     background-color: white;
     margin: 0;
     margin-left: 14vw;
-    padding-left: 30px;
     width: 86vw;
     height: 90vh;
     overflow-y: scroll;
@@ -46,9 +45,6 @@ body {
     background-color: rgb(16, 16, 16);
 }
 
-.main-title-home {
-    text-align: center;
-}
 
 .home-title {
     color: #ff8522;
@@ -59,4 +55,19 @@ body {
 #content-home {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.welcome-home {
+    text-align: left;
+    min-height: 150px;
+    webkit-box-shadow: 0px 6px 51px -14px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 6px 51px -14px rgba(0,0,0,0.58);
+    box-shadow: 0px 6px 51px -14px rgba(0,0,0,0.58);
+    margin-bottom: 100px;
+}
+
+.main-title-home {
+    font-size: 4em;
+    padding: 37px 80px;
+    font-weight: 400;;
 }

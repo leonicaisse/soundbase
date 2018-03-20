@@ -14,12 +14,12 @@
                     {{ csrf_field() }}
                     <div class="form-upload-left">
                         <label id="choose-image-label" for="choose-image">Mettre à jour</label>
-                        <input type="file" name="choose-image" id="choose-image" required>
+                        <input type="file" name="pochette" id="choose-image" >
                     </div>
                     <div class="form-upload-right">
                     <fieldset>
                         <h4 class="blue-title">Titre<span>*</span></h4>
-                        <input placeholder="Titre de la chanson" type="text" name="song-name" id="song-name" tabindex="1" required>
+                        <input placeholder="Titre de la chanson" type="text" name="nom" id="song-name" tabindex="1" required>
                     </fieldset>
                     <fieldset>
                         <h4 class="blue-title">Genre<span>*</span></h4>
@@ -28,7 +28,7 @@
                     <fieldset>
                         <h4 class="blue-title" >Fichier<span>*</span></h4>
                         <label id="song-file-label" for="choose-file">Ajouter un fichier</label>
-                        <input placeholder="Ajouter un fichier" type="file" name="choose-file" id="choose-file" tabindex="3" required >
+                        <input placeholder="Ajouter un fichier" type="file" name="chanson" id="choose-file" tabindex="3" required >
                     </fieldset>
                     <p class="blue-title italic-paragraph">En cliquant sur le bouton uploader je reconnais avoir pris connaissances des <span><a href="#" class="link-orange">Conditions Générales d'Utilisation de SoundBase</a></span> et je certifie être propriétaires des droits relatifs au fichier mis en ligne</p>
                     </div>

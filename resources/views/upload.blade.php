@@ -32,6 +32,7 @@
                     </fieldset>
                     <p class="blue-title italic-paragraph">En cliquant sur le bouton uploader je reconnais avoir pris connaissances des <span><a href="#" class="link-orange">Conditions Générales d'Utilisation de SoundBase</a></span> et je certifie être propriétaires des droits relatifs au fichier mis en ligne</p>
                     </div>
+
                 </div>
                 <div class="button-submit">
                     <button type="submit" class="upload-file" id="upload-file" name="upload-file">Uploader</button>

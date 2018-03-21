@@ -24,6 +24,9 @@ class Song extends Controller
 
             $c->fichier = $request->file('chanson')->store('public/audio/' . Auth::id());
             $c->fichier = str_replace("public/", "/storage/", $c->fichier);
+
+            $c->pochette = $request->file('pochette')->store('public/pochette/' . Auth::id());
+            $c->pochette = str_replace("public/", "/storage/", $c->pochette);
             $c->save();
         }
         return redirect("/home");

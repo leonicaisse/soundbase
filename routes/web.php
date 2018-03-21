@@ -13,9 +13,10 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware('guest');
 
 Auth::routes();
+
 
 Route::get('/home', 'HomePage@index')->middleware('auth');
 Route::get('/upload_song', 'Song@upload')->middleware('auth');

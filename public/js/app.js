@@ -14,7 +14,7 @@ $('document').ready(function () {
 
     $.each(chansons, function (key, chanson) {
         //console.log(chanson.titre+' | '+chanson.artiste+' | '+chanson.album+' | '+chanson.pochette+' | '+chanson.fichier);
-        $('#chansons').append(`<br /><div class="chanson-list"><p><a class="chanson" href="#" data-titre="${chanson.titre}" data-artiste="${chanson.artiste}" data-artiste_id="${chanson.artiste_id}" data-album="${chanson.album}" data-pochette="${chanson.pochette}" data-fichier="${chanson.fichier}" data-key="${key}"><img src="http://localhost:8000/images/no-song.jpg" style="width: 150px;height: 150px"/> <b>${chanson.titre}</b><a class="chanson-author" href="/user/${chanson.artiste_id}">${chanson.artiste}</a></p></div>`);
+        $('#chansons').append(`<br /><div class="chanson-list"><p><a class="chanson" href="#" data-titre="${chanson.titre}" data-artiste="${chanson.artiste}" data-artiste_id="${chanson.artiste_id}" data-album="${chanson.album}" data-pochette="${chanson.pochette}" data-fichier="${chanson.fichier}" data-key="${key}"><img src="${chanson.pochette}" style="width: 150px;height: 150px"/> <b>${chanson.titre}</b><a class="chanson-author" href="/user/${chanson.artiste_id}">${chanson.artiste}</a></p></div>`);
     });
 
     $('#chansons').on('click', 'a.chanson', function (e) {
@@ -32,7 +32,7 @@ $('document').ready(function () {
         player[0].play();
         $('#btn-plps').css('backgroundImage', 'url("/images/pause.png")');
         $('#song-playing').html(
-            `<img src="/images/pochettes/${pochette}" class='chanson-pochette' width="75px"/><h3 class='chanson-titre'>${titre}</h3><h3><a class="artiste-playing" href="/user/${artiste_id}">${artiste}</a></h3>`
+            `<img src="${pochette}" class='chanson-pochette' width="75px"/><h3 class='chanson-titre'>${titre}</h3><h3><a class="artiste-playing" href="/user/${artiste_id}">${artiste}</a></h3>`
         );
     });
 

@@ -8,7 +8,7 @@
                 artiste: "{{$c -> utilisateur -> name}}",
                 artiste_id: "{{$c -> utilisateur -> id}}",
                 album: "variable album",
-                pochette: "variable pochette",
+                pochette: "{{$c -> pochette}}",
                 fichier: "{{$c -> fichier}}",
             });
         </script>

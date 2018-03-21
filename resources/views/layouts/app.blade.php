@@ -64,7 +64,7 @@
                                             <ul>
                                                 <li>
                                                     <form id="search" class="search">
-                                                        <input type="text" id="input-src" class="input-src" placeholder="Rechercher des bails">
+                                                        <input type="text" id="input-src" class="input-src" placeholder="Rechercher des bails" required>
                                                         <button type="submit" id="btn-src" class="btn-src"></button>
                                                     </form>
                                                 </li>

@@ -650,11 +650,17 @@ input[type=checkbox]:checked+label {
     flex-direction: column;
     padding-left: 15px;
     margin-top: 20px;
+    max-width: 165px;
+
 }
 
 .chanson b {
     cursor: pointer;
     color: #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
 }
 
 .chanson em {

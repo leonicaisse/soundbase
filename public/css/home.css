@@ -77,3 +77,20 @@ body {
 .chanson-author {
     color: black;
 }
+.profile-title {
+    padding: 0;
+}
+
+#input-src {
+    border-radius : 500px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    padding-left: 10px;
+    font-style: italic;
+    font-weight: 300;
+    color: #000;
+}
+
+#btn-src {
+    display: none;
+}

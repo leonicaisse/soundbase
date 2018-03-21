@@ -2,11 +2,14 @@
 
 
 $('document').ready(function () {
+    //RIEN AVANT
+
+    if (typeof chansons == 'undefined') {
+        chansons = [];
+    }
 
     let player = $('#audio-player');
     player[0].volume = '0.8';
-    //RIEN AVANT
-    console.log(chansons);
     let playingKey;
 
     $.each(chansons, function (key, chanson) {
@@ -141,7 +144,21 @@ $('document').ready(function () {
 
     $('#search').submit(function (e) {
         e.preventDefault();
-        window.location.href = '/recherche/'+e.target.elements[0].value;
+        window.location.href = '/recherche/' + e.target.elements[0].value;
+    });
+
+    $('#choose-image').on('change', function () {
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+
+            reader.onloadend = function(){ // set image data as background of div
+                $("#choose-image-label").css("backgroundImage", "url("+this.result+")");
+            }
+        }
     });
     //RIEN APRES
 });

@@ -602,7 +602,7 @@ input[type=checkbox]:checked+label {
     float: left;
 }
 
-.chanson-titre, .chanson-artiste {
+.chanson-titre, .artiste-playing {
     margin-left: 100px;
 
 }
@@ -614,8 +614,9 @@ input[type=checkbox]:checked+label {
     line-height: 1.2;
 }
 
-.chanson-artiste {
-    font-size: 1.1em;
+.artiste-playing a{
+    font-size: 1em;
+    color: #fff;
     font-weight: 200;
 }
 

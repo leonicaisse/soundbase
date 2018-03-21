@@ -69,6 +69,11 @@ body {
     font-weight: 400;;
 }
 
+.main-title-home span {
+
+    font-weight: bold;
+}
+
 .chanson-list p {
     display: flex;
     flex-direction: column;
@@ -80,7 +85,16 @@ body {
 
 .chanson-author {
     color: black;
+    transition: color 300ms ease-in-out;
 }
+
+.chanson-author:hover {
+    color: #18153e;
+    font-weight: 600;
+    transition: color 300ms ease-in-out;
+}
+
+
 .profile-title {
     padding: 0;
     font-weight: bold;

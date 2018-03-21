@@ -616,8 +616,16 @@ input[type=checkbox]:checked+label {
 
 .artiste-playing a{
     font-size: 1em;
+    border: transparent;
     color: #fff;
     font-weight: 200;
+    transition: color 300ms ease-in-out, border 300ms ease-in-out;
+}
+
+.artiste-playing a:hover {
+    color: #ff8522;
+    transition: color 300ms ease-in-out, border 300ms ease-in-out;
+    border-bottom: 2px solid #ff8522;
 }
 
 .chanson-artiste em {

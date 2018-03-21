@@ -239,6 +239,7 @@ fieldset {
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(rgb(24, 21, 62)0%, rgb(16, 16, 16) 85%);
+    background-size: cover;
 
 }
 
@@ -741,6 +742,14 @@ input:focus {
     outline: 0;
 }
 
+select:focus {
+    outline: 0;
+}
+
+select {
+    cursor: pointer;
+}
+
 .time-prog {
     margin-top: 10px;
     width: 600px;
@@ -832,4 +841,10 @@ input:focus {
     background-color: #fff;
     color: #18153e;
     transition: color 300ms ease-in-out,background-color 300ms ease-in-out;
+}
+
+#genre {
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
 }

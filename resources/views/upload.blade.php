@@ -25,7 +25,7 @@
                             <h4 class="blue-title">Genre de la chanson<span>*</span></h4>
                             <!--placeholder="Genre de la chanson" type="text" name="style" id="style" tabindex="2" required>-->
                             <select name="style" id="style" tabindex="2" required>
-                                <option value="" disabled selected>Genre</option>
+                                <option  id="genre" value="" disabled selected>Genre</option>
                                 <option value="rock">Rock</option>
                                 <option value="rap">Rap</option>
                                 <option value="pop">Pop</option>

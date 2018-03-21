@@ -22,9 +22,17 @@
                                    required>
                         </fieldset>
                         <fieldset>
-                            <h4 class="blue-title">Genre<span>*</span></h4>
-                            <input placeholder="Genre de la chanson" type="text" name="style" id="style" tabindex="2"
-                                   required>
+                            <h4 class="blue-title">Genre de la chanson<span>*</span></h4>
+                            <!--placeholder="Genre de la chanson" type="text" name="style" id="style" tabindex="2" required>-->
+                            <select name="style" id="style" tabindex="2" required>
+                                <option value="" disabled selected>Genre</option>
+                                <option value="rock">Rock</option>
+                                <option value="rap">Rap</option>
+                                <option value="pop">Pop</option>
+                                <option value="classique">Classique</option>
+                                <option value="techno">Techno</option>
+                                <option value="meme">Meme</option>
+                            </select>
                         </fieldset>
                         <fieldset>
                             <h4 class="blue-title">Fichier<span>*</span></h4>

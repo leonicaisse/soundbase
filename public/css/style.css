@@ -449,6 +449,7 @@ input[type=checkbox]:checked+label {
     font-weight: bold;
     font-size: 1.5em;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .upload-file:hover {
@@ -490,7 +491,7 @@ input[type=checkbox]:checked+label {
 }
 .user-account {
     margin-top: 15%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 .user-avatar {
     border-radius: 50%;
@@ -789,4 +790,40 @@ input:focus {
     width: 40%;
     position: relative;
     text-align: center;
+}
+
+.user-profil-avatar {
+    border-radius: 500px;
+}
+
+.profile-home {
+    display: flex;
+}
+
+
+.flex-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-follow {
+    display: flex;
+    flex-direction: row;
+}
+
+.follow {
+    background-color: #18153e;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 40px;
+    border: 2px solid #18153e;
+    border-radius: 500px;
+    font-weight: 600;
+    transition: color 300ms ease-in-out,background-color 300ms ease-in-out;
+}
+
+.follow:hover {
+    background-color: #fff;
+    color: #18153e;
+    transition: color 300ms ease-in-out,background-color 300ms ease-in-out;
 }

@@ -13,10 +13,10 @@
             @include('_chansons', ['chansons' => $lastAll, 'genre' => 'all'])
             <br/>
             <h2 class="home-title">Nouveautés Rock</h2>
-            @include('_chansons', ['chansons' => $lastAll, 'genre' => 'rock'])
+            {{--@include('_chansons', ['chansons' => $lastAll, 'genre' => 'rock'])--}}
             <br/>
             <h2 class="home-title">Nouveautés Rap</h2>
-            @include('_chansons', ['chansons' => $lastAll, 'genre' => 'rap'])
+            {{--@include('_chansons', ['chansons' => $lastAll, 'genre' => 'rap'])--}}
             <br/>
         </div>
     </div>

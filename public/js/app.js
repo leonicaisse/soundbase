@@ -32,7 +32,7 @@ $('document').ready(function () {
         player[0].play();
         $('#btn-plps').css('backgroundImage', 'url("/images/pause.png")');
         $('#song-playing').html(
-            `<img src="${pochette}" class='chanson-pochette' width="75px"/><h3 class='chanson-titre'>${titre}</h3><h3><a class="artiste-playing" href="/user/${artiste_id}">${artiste}</a></h3>`
+            `<img src="${pochette}" class='chanson-pochette' width="75px"/><h3 class='chanson-titre'>${titre}</h3><h3 class="artiste-playing"><a href="/user/${artiste_id}">${artiste}</a></h3>`
         );
     });
 

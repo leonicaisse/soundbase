@@ -74,13 +74,16 @@ body {
     flex-direction: column;
 }
 
-
+#search {
+    text-align: center;
+}
 
 .chanson-author {
     color: black;
 }
 .profile-title {
     padding: 0;
+    font-weight: bold;
 }
 
 #input-src {
@@ -91,6 +94,8 @@ body {
     font-style: italic;
     font-weight: 300;
     color: #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #btn-src {

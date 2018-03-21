@@ -8,14 +8,11 @@
             <div class="flex-profile">
                 <img src="{{asset('images/visage.jpg')}} " class="user-profil-avatar">
             </div>
-            <div class="flex-profile">
+            <div class="flex-profile profil-div-right">
                 <h1 class="main-title-home profile-title"><span>{{$utilisateur->name }}</span></h1>
                 <div class="profile-follow">
-                <h4 class="blue-title"> Abonnés : </h4>
-                <span style="font-weight: bold;">{{$utilisateur->ilsMeSuivent()->count()}}</span>
-                <h4 class="blue-title border-left">Abonnements :</h4>
-                <span  style="font-weight: bold;"> {{$utilisateur->jeLesSuis()->count()}}</span>
-                <br/>
+
+                <div>
                 @auth
                     @if($utilisateur->id != \Illuminate\Support\Facades\Auth::id())
                         @if(Auth::user()->jeLesSuis->contains($utilisateur->id))
@@ -25,6 +22,16 @@
                         @endif
                     @endif
                 @endauth
+                </div>
+                    <br/>
+                    <div id="left-border-profile">
+                    <h4 class="blue-title reduce-line"> Abonnés</h4>
+                    <span style="font-weight: bold;">{{$utilisateur->ilsMeSuivent()->count()}}</span>
+                    </div>
+                    <div id="right-border-profile">
+                    <h4 class="blue-title reduce-line">Abonnements</h4>
+                    <span  style="font-weight: bold;"> {{$utilisateur->jeLesSuis()->count()}}</span>
+                    </div>
                 </div>
             </div>
         </div>

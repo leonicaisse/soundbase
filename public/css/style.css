@@ -602,7 +602,7 @@ input[type=checkbox]:checked+label {
     float: left;
 }
 
-.chanson-titre, .chanson-artiste {
+.chanson-titre, .artiste-playing {
     margin-left: 100px;
 
 }
@@ -614,9 +614,18 @@ input[type=checkbox]:checked+label {
     line-height: 1.2;
 }
 
-.chanson-artiste {
-    font-size: 1.1em;
+.artiste-playing a{
+    font-size: 1em;
+    border: transparent;
+    color: #fff;
     font-weight: 200;
+    transition: color 300ms ease-in-out, border 300ms ease-in-out;
+}
+
+.artiste-playing a:hover {
+    color: #ff8522;
+    transition: color 300ms ease-in-out, border 300ms ease-in-out;
+    border-bottom: 2px solid #ff8522;
 }
 
 .chanson-artiste em {

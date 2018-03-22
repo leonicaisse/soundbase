@@ -241,6 +241,7 @@ fieldset {
     background: linear-gradient(rgb(24, 21, 62)0%, rgb(16, 16, 16) 85%);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
 }
 
@@ -821,6 +822,7 @@ select {
     border-radius: 500px;
     width: 150px;
     height: 150px;
+    clip-path: url(#svgPath);
 }
 
 .profile-home {

@@ -10,7 +10,10 @@
                 <svg height="0" width="0">
                     <defs>
                         <clipPath id="svgPath">
-                            <path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M23.5,17.7C55.4-4,152.4,47.6,148.6,80.3C144.9,113,61.3,148.9,25.3,134C-4.4,121.8-8.4,39.4,23.5,17.7z"/>
+                            <path class="st0" d="M23.8,18.2c7.7-4.8,16.9-6.3,26.4-5.5C67.4,14.2,84,20.1,99.1,28c14.4,7.6,29.5,16.9,40.1,29.5
+	c4.9,5.8,8.6,13,8.6,20.6c0.1,8.4-4.2,16.4-10.1,22.5c-8.4,8.8-20,15.4-30.8,20.8c-12.9,6.4-26.5,11.5-40.7,14.2
+	c-13.4,2.5-29.4,4.2-41.8-2.4C13.1,127,7.7,115.8,4.7,103.8c-4-15.9-4.5-32.6-1.5-48.7c2-10.8,5.6-21.9,13-30.3
+	C18.5,22.1,21,20,23.8,18.2z"/>
                         </clipPath>
                     </defs>
                 </svg>
@@ -24,9 +27,9 @@
                         @auth
                             @if($utilisateur->id != \Illuminate\Support\Facades\Auth::id())
                                 @if(Auth::user()->jeLesSuis->contains($utilisateur->id))
-                                    <a  class="follow" href="/suivre/{{$utilisateur->id}}">Suivi</a>
+                                    <a class="follow" href="/suivre/{{$utilisateur->id}}">Suivi</a>
                                 @else
-                                    <a  class="follow" href="/suivre/{{$utilisateur->id}}">Suivre</a>
+                                    <a class="follow" href="/suivre/{{$utilisateur->id}}">Suivre</a>
                                 @endif
                             @endif
                         @endauth
@@ -38,7 +41,7 @@
                     </div>
                     <div id="right-border-profile">
                         <h4 class="blue-title reduce-line">Abonnements</h4>
-                        <span  style="font-weight: bold;"> {{$utilisateur->jeLesSuis()->count()}}</span>
+                        <span style="font-weight: bold;"> {{$utilisateur->jeLesSuis()->count()}}</span>
                     </div>
                 </div>
             </div>

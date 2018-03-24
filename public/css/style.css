@@ -664,6 +664,7 @@ input[type=checkbox]:checked+label {
     margin-top: 20px;
     max-width: 165px;
 
+
 }
 
 .chanson b {
@@ -885,4 +886,60 @@ select {
     border-left: 2px solid #18153e;
     padding-left: 10px;
     line-height: 1.2;
+}
+
+.search-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-search {
+    width: 33%;
+}
+
+.flex-search div {
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.flex-search div div {
+    padding: 10px;
+    line-height: 1.2;
+    -webkit-box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.25);
+}
+
+.chanson-search {
+
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+.result-user {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    margin-top: 20px;
+    max-width: 165px;
+    border: 2px solid black;
+}
+
+.result-user p {
+    font-size: 8pt;
+}
+
+.username {
+    cursor: pointer;
+    color: #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 700;
+}
+.search-title {
+    color: #ff8522;
+    font-size: 1.4em;
 }

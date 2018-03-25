@@ -263,6 +263,7 @@ fieldset {
 
 
 #last-field {
+    padding-right: 0;
     border-bottom: none;
 }
 .background {
@@ -300,8 +301,6 @@ fieldset {
     text-transform: uppercase;
     color: white;
     padding: 5px 20px;
-    margin-left: 5%;
-    margin-right: 5%;
     font-weight: 400;
 }
 .facebook:hover {
@@ -381,6 +380,7 @@ input[type=checkbox]:checked+label {
     background-color: #ff8522;
     text-transform: uppercase;
     padding: 5px 20px;
+    line-height: 28px;
     color: white;
     width: 100%;
     font-size: 1em;

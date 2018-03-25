@@ -1,3 +1,5 @@
+/* General Style */
+
 * {
     box-sizing: border-box;
     cursor: auto;
@@ -22,6 +24,78 @@ a{
 span {
     color: #ff8522;
 }
+
+
+/* Form Style */
+
+
+fieldset {
+    border: none;
+    border-bottom: 2px solid #ff8522;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+#name,
+#password,
+#email,
+#email-reset,
+#confirm-mail,
+#password-confirm{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    border: none;
+    padding-bottom: 0;
+    font-weight: 300;
+    width: 100%;
+}
+
+#song-name,
+#style,
+#song-file-label{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    border: none;
+    padding-bottom: 0;
+    font-weight: 300;
+    width: 100%;
+    color: #8e8e8e;
+    font-size: 12pt;
+    background-color: #f5f5f5;
+}
+
+#song-file-label {
+    cursor: pointer;
+}
+
+#choose-image-label {
+    color: white;
+    width: 266px;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgb(24, 21, 62)0%, rgb(16, 16, 16) 85%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#choose-file,
+#choose-image{
+    display: none;
+}
+
+#last-field {
+    padding-right: 0;
+    border-bottom: none;
+}
+
+/* Header Home-Register-Login Style */
+
 .main-header {
     position: absolute;
     color: white;
@@ -80,6 +154,9 @@ span {
 .first-menu {
     padding-right: 5%;
 }
+
+/* Connexion Page Style */
+
 .connexion {
     border: 2px solid white;
     border-radius: 500px;
@@ -91,6 +168,103 @@ span {
     color: black;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
+
+.main-connexion {
+    margin: auto;
+    background-color: white;
+    padding: 2em;
+    border-radius: 20px;
+    color: black;
+}
+.main-connexion h1 {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+}
+#login {
+    border: none;
+    margin: auto;
+}
+
+.background {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
+.background:before {
+    border-top: 1px solid black;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+.double-line {
+    color: black;
+    background: #fff;
+    padding: 0 15px;
+    font-weight: 400;
+}
+.facebook {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    border: 2px solid #3b5998;
+    border-radius: 500px;
+    background-color: #3b5998;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px 20px;
+    font-weight: 400;
+}
+.facebook:hover {
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    background-color: white;
+    color: #3b5998;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]+label {
+    background: white;
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    border: 1px solid #ff8522;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=checkbox]:checked+label {
+    background: #ff8522;
+    background-image: url(../images/check_white.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    padding: 0 0 0 0;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+.remember {
+    color: #717171;
+    font-weight: 300;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.remember label {
+    cursor: pointer;
+}
+
+/* Inscription Page Style */
+
+
 .inscription {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 2px solid #ff8522;
@@ -101,6 +275,43 @@ span {
     background-color: transparent;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
+
+.main-inscription {
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    padding: 2em;
+}
+.main-inscription h1 {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+}
+
+#submit-register {
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    border: 2px solid #ff8522;
+    border-radius: 500px;
+    background-color: #ff8522;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    line-height: 28px;
+    color: white;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+}
+#submit-register:hover {
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    background-color: white;
+    color: #ff8522;
+}
+
+/* Landing Home Page Style */
+
 .main-landing {
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/background.jpg);
     background-repeat: no-repeat;
@@ -162,93 +373,9 @@ span {
     color: white;
     display:inline-block;
 }
-.main-inscription {
-    margin: auto;
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-    padding: 2em;
-}
-.main-inscription h1 {
-    text-align: center;
-    color: black;
-    font-weight: 400;
-}
-.main-connexion {
-    margin: auto;
-    background-color: white;
-    padding: 2em;
-    border-radius: 20px;
-    color: black;
-}
-.main-connexion h1 {
-    text-align: center;
-    color: black;
-    font-weight: 400;
-}
-#login {
-    border: none;
-    margin: auto;
-}
-fieldset {
-    border: none;
-    border-bottom: 2px solid #ff8522;
-    padding-bottom: 0;
-    margin-bottom: 20px;
-    padding-left: 0;
-}
-#name,
-#password,
-#email,
-#email-reset,
-#confirm-mail,
-#password-confirm{
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    border: none;
-    padding-bottom: 0;
-    font-weight: 300;
-    width: 100%;
-}
 
-#song-name,
-#style,
-#song-file-label{
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    border: none;
-    padding-bottom: 0;
-    font-weight: 300;
-    width: 100%;
-    color: #8e8e8e;
-    font-size: 12pt;
-    background-color: #f5f5f5;
-}
+/* General Syle Logged */
 
-#song-file-label {
-    cursor: pointer;
-}
-
-#choose-image-label {
-    color: white;
-    width: 266px;
-    height: 100%;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(rgb(24, 21, 62)0%, rgb(16, 16, 16) 85%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-}
-
-#choose-file,
-#choose-image{
-    display: none;
-}
 
 .blue-title {
     color: #18153e;
@@ -261,85 +388,6 @@ fieldset {
 }
 
 
-
-#last-field {
-    padding-right: 0;
-    border-bottom: none;
-}
-.background {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    text-transform: uppercase;
-}
-.background:before {
-    border-top: 1px solid black;
-    content: "";
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 95%;
-    z-index: -1;
-}
-.double-line {
-    color: black;
-    background: #fff;
-    padding: 0 15px;
-    font-weight: 400;
-}
-.facebook {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-    border: 2px solid #3b5998;
-    border-radius: 500px;
-    background-color: #3b5998;
-    text-transform: uppercase;
-    color: white;
-    padding: 5px 20px;
-    font-weight: 400;
-}
-.facebook:hover {
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-    background-color: white;
-    color: #3b5998;
-}
-input[type=checkbox] {
-    display: none;
-}
-input[type=checkbox]+label {
-    background: white;
-    height: 20px;
-    width: 20px;
-    display: inline-flex;
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-    border: 1px solid #ff8522;
-    border-radius: 5px;
-    cursor: pointer;
-}
-input[type=checkbox]:checked+label {
-    background: #ff8522;
-    background-image: url(../images/check_white.svg);
-    height: 20px;
-    width: 20px;
-    display: inline-flex;
-    padding: 0 0 0 0;
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-}
-.remember {
-    color: #717171;
-    font-weight: 300;
-    margin-left: 2%;
-    margin-bottom: 2%;
-}
-
-.remember label {
-    cursor: pointer;
-}
 .p-center {
     text-align: center;
 }
@@ -372,26 +420,7 @@ input[type=checkbox]:checked+label {
     border-bottom:2px solid #ff8522;
 }
 
-#submit-register {
-    font-family: 'Raleway', sans-serif;
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-    border: 2px solid #ff8522;
-    border-radius: 500px;
-    background-color: #ff8522;
-    text-transform: uppercase;
-    padding: 5px 20px;
-    line-height: 28px;
-    color: white;
-    width: 100%;
-    font-size: 1em;
-    font-weight: 400;
-    cursor: pointer;
-}
-#submit-register:hover {
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-    background-color: white;
-    color: #ff8522;
-}
+
 #submit-log {
     font-family: 'Raleway', sans-serif;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
@@ -440,28 +469,8 @@ input[type=checkbox]:checked+label {
 }
 
 
-.upload-file {
-    font-family: 'Raleway', sans-serif;
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-    border: 2px solid #ff8522;
-    border-radius: 500px;
-    background-color: #ff8522;
-    text-transform: uppercase;
-    padding: 10px 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5em;
-    cursor: pointer;
-    margin-top: 30px;
-}
 
-.upload-file:hover {
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-    background-color: white;
-    color: #ff8522;
-}
-
-
+/* Home Logged Page - Menu - */
 
 
 .main-header-home {
@@ -595,7 +604,9 @@ input[type=checkbox]:checked+label {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-/*------- PLAYER --------------*/
+
+/* Player Style */
+
 
 .chanson-pochette {
     height: 90px;
@@ -632,11 +643,6 @@ input[type=checkbox]:checked+label {
 .chanson-artiste em {
     display: none;
 }
-
-
-
-
-/* Clément Modif */
 
 .chanson {
     color: white;
@@ -803,6 +809,30 @@ select {
     cursor: pointer;
 }
 
+/* Upload Page */
+
+
+.upload-file {
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    border: 2px solid #ff8522;
+    border-radius: 500px;
+    background-color: #ff8522;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.upload-file:hover {
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    background-color: white;
+    color: #ff8522;
+}
+
 .grey-background{
     padding: 60px;
     background-color: #f5f5f5;
@@ -819,6 +849,9 @@ select {
     text-align: center;
 }
 
+
+/* Profile Page */
+
 .user-profil-avatar {
     border-radius: 500px;
     width: 150px;
@@ -832,8 +865,6 @@ select {
     padding-bottom: 35px;
     padding-left: 15%;
 }
-
-
 
 .flex-profile {
     display: flex;
@@ -887,6 +918,8 @@ select {
     padding-left: 10px;
     line-height: 1.2;
 }
+
+/* Search Page */
 
 .search-main {
     display: flex;

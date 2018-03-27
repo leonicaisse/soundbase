@@ -117,18 +117,22 @@
                                 class='chanson-titre'>SoundBase</h1>
                     </div>
                     <div class="player">
+                        <div class="player-controller">
                         <audio id="audio-player" class="audio-player" controls src="" hidden></audio>
                         <button id="btn-prev" class="btn-prev"></button>
                         <button id="btn-plps" class="btn-plps"></button>
                         <button id="btn-next" class="btn-next"></button>
-                        <div class="progressbar">
+                        </div>
+                        <div class="progressbar player-main">
                             <p id="current-time" class="current-time"></p>
                             <input id="time-prog" type="range" min="0" max="2000" value="0" class="slider time-prog"/>
                             <p id="duration" class="duration"></p>
                         </div>
+                        <div class="song-controller">
                         <button id="btn-mute" class="btn-mute"></button>
                         <div class="progressbar">
                             <input id="slider-vol" type="range" min="0" max="100" value="80" class="slider slider-vol"/>
+                        </div>
                         </div>
                     </div>
                 </div>

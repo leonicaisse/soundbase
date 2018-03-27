@@ -628,16 +628,14 @@ input[type=checkbox]:checked+label {
 
 .artiste-playing a{
     font-size: 1em;
-    border: transparent;
     color: #fff;
     font-weight: 200;
-    transition: color 300ms ease-in-out, border 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
 }
 
 .artiste-playing a:hover {
     color: #ff8522;
-    transition: color 300ms ease-in-out, border 300ms ease-in-out;
-    border-bottom: 2px solid #ff8522;
+    transition: color 300ms ease-in-out;
 }
 
 .chanson-artiste em {
@@ -655,7 +653,10 @@ input[type=checkbox]:checked+label {
 
 .chanson img {
     cursor: pointer;
+    position: relative;
 }
+
+
 
 .chanson-folder {
     display: flex;
@@ -692,7 +693,6 @@ input[type=checkbox]:checked+label {
 .player {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
     margin-left: 50px;
 }
 
@@ -769,13 +769,11 @@ select {
 }
 
 .time-prog {
-    margin-top: 10px;
     width: 600px;
 }
 
 .slider-vol {
     width: 80px;
-    margin-top: 5px;
 }
 
 
@@ -807,6 +805,41 @@ select {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+}
+
+#current-time {
+    width: 40px;
+    font-family: sans-serif;
+}
+
+.duration {
+    width: 40px;
+    font-family: sans-serif;
+}
+
+#song-playing {
+    width: 210px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.player-controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-main {
+    justify-content: center;
+    align-items: center;
+}
+
+.song-controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Upload Page */
@@ -939,9 +972,10 @@ select {
 .flex-search div div {
     padding: 10px;
     line-height: 1.2;
-    -webkit-box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.25);
-    box-shadow: 10px 10px 54px 0px rgba(0,0,0,0.25);
+    height: 210px;
+    webkit-box-shadow: 0px 6px 51px -14px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 6px 51px -14px rgba(0,0,0,0.58);
+    box-shadow: 0px 6px 51px -14px rgba(0,0,0,0.58);
 }
 
 .chanson-search {
@@ -955,6 +989,7 @@ select {
     flex-direction: column;
     padding-left: 15px;
     margin-top: 20px;
+    width: 165px;
     max-width: 165px;
     border: 2px solid black;
 }

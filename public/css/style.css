@@ -566,27 +566,28 @@ input[type=checkbox]:checked+label {
 }
 #link-to-home::before {
     padding-right: 20px;
-    content: url(../images/icones-20180303T235741Z-001/icones/house-5937_d21cef88-428c-46d8-b9df-3cc5b685ed41.svg);
+    content: url(../images/house.svg);
+    background-size : 20px;
 }
 #link-to-music::before {
     padding-right: 20px;
-    content: url(../images/icones-20180303T235741Z-001/icones/user-2707_798270d8-4f68-4a97-9e9d-610ada6efbce.svg);
+    content: url(../images/musique.svg);
 }
 #link-to-playlist::before {
     padding-right: 20px;
-    content: url(../images/icones-20180303T235741Z-001/icones/user-2707_798270d8-4f68-4a97-9e9d-610ada6efbce.svg);
+    content: url(../images/playlist.svg);
 }
 #link-to-follow::before {
     padding-right: 20px;
-    content: url(../images/icones-20180303T235741Z-001/icones/user-2707_798270d8-4f68-4a97-9e9d-610ada6efbce.svg);
+    content: url(../images/abonnements.svg);
 }
 #link-to-notif::before {
     padding-right: 20px;
-    content: url(../images/icones-20180303T235741Z-001/icones/user-2707_798270d8-4f68-4a97-9e9d-610ada6efbce.svg);
+    content: url(../images/user.svg);
 }
 #link-to-exit::before {
     padding-right: 20px;
-    content: url(../images/icones-20180303T235741Z-001/icones/import-96_42eb5a49-4d8e-484f-a16b-212c9413c1fe.svg);
+    content: url(../images/logout.svg);
 }
 .player-home {
     position: fixed;

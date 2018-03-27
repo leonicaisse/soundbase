@@ -4,6 +4,7 @@
     box-sizing: border-box;
     cursor: auto;
 }
+
 html,
 body,
 ul {
@@ -11,23 +12,24 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.75;
     color: white;
     cursor: default;
 }
-a{
+
+a {
     text-decoration: none;
     cursor: pointer;
 }
+
 span {
     color: #ff8522;
 }
 
-
 /* Form Style */
-
 
 fieldset {
     border: none;
@@ -36,12 +38,13 @@ fieldset {
     margin-bottom: 20px;
     padding-left: 0;
 }
+
 #name,
 #password,
 #email,
 #email-reset,
 #confirm-mail,
-#password-confirm{
+#password-confirm {
     font-family: 'Raleway', sans-serif;
     font-style: italic;
     border: none;
@@ -54,7 +57,7 @@ fieldset {
 #style,
 #username,
 #new-password,
-#song-file-label{
+#song-file-label {
     font-family: 'Raleway', sans-serif;
     font-style: italic;
     border: none;
@@ -79,20 +82,30 @@ fieldset {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(rgb(24, 21, 62)0%, rgb(16, 16, 16) 85%);
+    background: linear-gradient(rgb(24, 21, 62) 0%, rgb(16, 16, 16) 85%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
 }
 
-#avatar-label {
+#change-avatar-label {
+    color: white;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-
 
 #choose-file,
 #choose-image,
-#avatar{
+#change-avatar {
     display: none;
 }
 
@@ -109,6 +122,7 @@ fieldset {
     background: #52525000;
     width: 100%
 }
+
 .header-inner {
     display: table;
     width: 100%;
@@ -116,13 +130,16 @@ fieldset {
     margin: 0 auto;
     padding: 20px 25px;
 }
-.header-inner>* {
+
+.header-inner > * {
     display: table-cell;
     vertical-align: middle;
 }
+
 .header-nav {
     text-align: right;
 }
+
 .header-logo {
     width: 70px;
 }
@@ -130,22 +147,26 @@ fieldset {
 .header-logo a img {
     cursor: pointer;
 }
+
 .site-title {
     font-weight: 400;
     font-size: 1.4em;
     cursor: pointer;
-    display:inline-block;
+    display: inline-block;
 }
+
 .site-title span {
     font-weight: 600;
     cursor: pointer;
 }
+
 .header-nav ul,
 .header-nav li {
     display: inline;
     list-style: none;
     text-transform: uppercase;
 }
+
 .header-nav a {
     position: relative;
     display: inline-block;
@@ -158,6 +179,7 @@ fieldset {
     cursor: pointer;
     font-size: 0.9em;
 }
+
 .first-menu {
     padding-right: 5%;
 }
@@ -170,6 +192,7 @@ fieldset {
     background-color: transparent;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
+
 .connexion:hover {
     background-color: white;
     color: black;
@@ -183,11 +206,13 @@ fieldset {
     border-radius: 20px;
     color: black;
 }
+
 .main-connexion h1 {
     text-align: center;
     color: black;
     font-weight: 400;
 }
+
 #login {
     border: none;
     margin: auto;
@@ -199,6 +224,7 @@ fieldset {
     z-index: 1;
     text-transform: uppercase;
 }
+
 .background:before {
     border-top: 1px solid black;
     content: "";
@@ -211,12 +237,14 @@ fieldset {
     width: 95%;
     z-index: -1;
 }
+
 .double-line {
     color: black;
     background: #fff;
     padding: 0 15px;
     font-weight: 400;
 }
+
 .facebook {
     display: flex;
     justify-content: center;
@@ -230,6 +258,7 @@ fieldset {
     padding: 5px 20px;
     font-weight: 400;
 }
+
 .facebook:hover {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
@@ -239,7 +268,8 @@ fieldset {
 input[type=checkbox] {
     display: none;
 }
-input[type=checkbox]+label {
+
+input[type=checkbox] + label {
     background: white;
     height: 20px;
     width: 20px;
@@ -249,7 +279,8 @@ input[type=checkbox]+label {
     border-radius: 5px;
     cursor: pointer;
 }
-input[type=checkbox]:checked+label {
+
+input[type=checkbox]:checked + label {
     background: #ff8522;
     background-image: url(../images/check_white.svg);
     height: 20px;
@@ -258,6 +289,7 @@ input[type=checkbox]:checked+label {
     padding: 0 0 0 0;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
+
 .remember {
     color: #717171;
     font-weight: 300;
@@ -271,13 +303,13 @@ input[type=checkbox]:checked+label {
 
 /* Inscription Page Style */
 
-
 .inscription {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     border: 2px solid #ff8522;
     border-radius: 500px;
     background-color: #ff8522;
 }
+
 .inscription:hover {
     background-color: transparent;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
@@ -290,6 +322,7 @@ input[type=checkbox]:checked+label {
     color: black;
     padding: 2em;
 }
+
 .main-inscription h1 {
     text-align: center;
     color: black;
@@ -311,6 +344,7 @@ input[type=checkbox]:checked+label {
     font-weight: 400;
     cursor: pointer;
 }
+
 #submit-register:hover {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
@@ -327,6 +361,7 @@ input[type=checkbox]:checked+label {
     min-height: 100vh;
     display: flex;
 }
+
 .main-landing-black {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/background.jpg);
     background-repeat: no-repeat;
@@ -335,6 +370,7 @@ input[type=checkbox]:checked+label {
     min-height: 100vh;
     display: flex;
 }
+
 .text-landing {
     border-left: 5px solid white;
     margin: auto;
@@ -342,11 +378,13 @@ input[type=checkbox]:checked+label {
     align-content: center;
     justify-content: center;
 }
+
 .title-landing,
 .subtitle-landing {
     text-align: justify;
     padding-left: 40px;
 }
+
 .title-landing {
     margin-top: 0;
     margin-bottom: 0;
@@ -354,6 +392,7 @@ input[type=checkbox]:checked+label {
     line-height: 1.1;
     font-size: 5.5em
 }
+
 .subtitle-landing {
     color: #ff8522;
     margin-top: 0;
@@ -361,28 +400,31 @@ input[type=checkbox]:checked+label {
     font-weight: 400;
     font-size: 1.8em;
 }
+
 .text-landing ul {
     list-style-type: none;
     padding-left: 40px;
 }
+
 .text-landing ul li {
     font-weight: 600;
     display: block;
     font-size: 1.5em;
 }
+
 .text-landing ul li img {
     width: 10%;
     height: auto;
     vertical-align: middle;
 }
+
 .home {
     text-decoration: none;
     color: white;
-    display:inline-block;
+    display: inline-block;
 }
 
 /* General Syle Logged */
-
 
 .blue-title {
     color: #18153e;
@@ -394,23 +436,22 @@ input[type=checkbox]:checked+label {
     font-style: italic;
 }
 
-
 .p-center {
     text-align: center;
 }
+
 .link-orange {
     text-decoration: none;
     color: #ff8522;
     transition: all 300ms ease-in-out;
-    border-bottom:1px solid transparent;
+    border-bottom: 1px solid transparent;
     cursor: pointer;
 }
 
-
-.link-orange:hover{
+.link-orange:hover {
     color: #18153E;
     transition: all 300ms ease-in-out;
-    border-bottom:2px solid #ff8522;
+    border-bottom: 2px solid #ff8522;
     font-weight: 800;
 
 }
@@ -418,15 +459,14 @@ input[type=checkbox]:checked+label {
 .link-orange p {
     cursor: pointer;
     transition: all 300ms ease-in-out;
-    border-bottom:1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 .link-orange p:hover {
     color: #18153E;
     transition: all 300ms ease-in-out;
-    border-bottom:2px solid #ff8522;
+    border-bottom: 2px solid #ff8522;
 }
-
 
 #submit-log {
     font-family: 'Raleway', sans-serif;
@@ -441,6 +481,7 @@ input[type=checkbox]:checked+label {
     font-size: 1em;
     cursor: pointer;
 }
+
 #submit-log:hover {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: white;
@@ -470,15 +511,11 @@ input[type=checkbox]:checked+label {
     text-align: center;
 }
 
-
 .button-submit {
     text-align: center;
 }
 
-
-
 /* Home Logged Page - Menu - */
-
 
 .main-header-home {
     margin-left: 2%;
@@ -486,6 +523,7 @@ input[type=checkbox]:checked+label {
     margin-top: 30px;
     position: fixed;
 }
+
 .header-logo-home {
     border-bottom: 2px solid #ff8522;
     width: 90%;
@@ -496,22 +534,26 @@ input[type=checkbox]:checked+label {
 .header-logo-home a img {
     cursor: pointer;
 }
+
 .site-title-home {
     font-weight: 400;
     font-size: 1.4em;
     color: #fff;
     cursor: pointer;
-    display:inline-block;
+    display: inline-block;
     padding-left: 10px;
 }
+
 .site-title-home span {
     font-weight: 600;
     cursor: pointer;
 }
+
 .user-account {
     margin-top: 15%;
     margin-bottom: 10%;
 }
+
 .user-avatar {
     border-radius: 50%;
     height: 50px;
@@ -520,6 +562,7 @@ input[type=checkbox]:checked+label {
     cursor: pointer;
 
 }
+
 .user-name {
     display: inline;
     color: white;
@@ -538,12 +581,15 @@ input[type=checkbox]:checked+label {
     margin-top: 10%;
     margin: auto;
 }
+
 .nav-menu ul {
     list-style: none;
 }
+
 .nav-menu ul li {
     padding-bottom: 25px;
 }
+
 .link-menu-home {
     text-decoration: none;
     color: white;
@@ -551,12 +597,13 @@ input[type=checkbox]:checked+label {
     font-size: 1.2em;
 
 }
+
 .link-menu-home:focus {
     color: #ff8522;
     transition: color 300ms ease-in-out;
 }
 
-.link-menu-home:hover{
+.link-menu-home:hover {
     transition: color 300ms ease-in-out;
     color: #ff8522;
 }
@@ -564,34 +611,42 @@ input[type=checkbox]:checked+label {
 .link-menu-home:active {
     color: #ff8522;
 }
+
 #link-to-home::before {
     padding-right: 20px;
     content: url(../images/house.svg);
-    background-size : 20px;
+    background-size: 20px;
 }
-#link-to-home::before img{
-    witdh : 20px;
+
+#link-to-home::before img {
+    witdh: 20px;
 }
+
 #link-to-music::before {
     padding-right: 20px;
     content: url(../images/musique.svg);
 }
+
 #link-to-playlist::before {
     padding-right: 20px;
     content: url(../images/playlist.svg);
 }
+
 #link-to-follow::before {
     padding-right: 20px;
     content: url(../images/abonnements.svg);
 }
+
 #link-to-notif::before {
     padding-right: 20px;
     content: url(../images/user.svg);
 }
+
 #link-to-exit::before {
     padding-right: 20px;
     content: url(../images/logout.svg);
 }
+
 .player-home {
     position: fixed;
     bottom: 0;
@@ -599,25 +654,26 @@ input[type=checkbox]:checked+label {
     width: 83%;
     display: flex;
 }
+
 #main-content-home::-webkit-scrollbar-track {
     background-color: #ffffff;
     border-radius: 12px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+
 #main-content-home::-webkit-scrollbar {
     position: fixed;
     width: 15px;
     background-color: #ffffff;
 }
+
 #main-content-home::-webkit-scrollbar-thumb {
     border-radius: 12px;
     background-color: #DAB3EA;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-
 /* Player Style */
-
 
 .chanson-pochette {
     height: 90px;
@@ -637,7 +693,7 @@ input[type=checkbox]:checked+label {
     line-height: 1.2;
 }
 
-.artiste-playing a{
+.artiste-playing a {
     font-size: 1em;
     color: #fff;
     font-weight: 200;
@@ -667,8 +723,6 @@ input[type=checkbox]:checked+label {
     position: relative;
 }
 
-
-
 .chanson-folder {
     display: flex;
     flex-direction: row;
@@ -681,7 +735,6 @@ input[type=checkbox]:checked+label {
     padding-left: 15px;
     margin-top: 20px;
     max-width: 165px;
-
 
 }
 
@@ -708,7 +761,7 @@ input[type=checkbox]:checked+label {
 }
 
 .player p {
-    margin : 0 15px;
+    margin: 0 15px;
 }
 
 .progressbar {
@@ -732,6 +785,7 @@ input[type="range"]:hover {
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     background-color: #ffffff;
 }
+
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -739,8 +793,9 @@ input[type="range"]::-webkit-slider-thumb {
     height: 0;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border 300ms ease-in-out;
 }
+
 .progressbar:hover input[type="range"]::-webkit-slider-thumb {
-    width:15px;
+    width: 15px;
     height: 15px;
     border: 1px solid #fff;
     border-radius: 50%;
@@ -752,8 +807,7 @@ input[type="range"]::-webkit-slider-thumb {
 .btn-prev,
 .btn-next,
 .btn-plps,
-.btn-mute
-{
+.btn-mute {
     display: inline-block;
     height: 16px;
     padding: 0;
@@ -763,8 +817,9 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: transparent;
     border: none;
 }
+
 button:focus {
-    outline:0;
+    outline: 0;
 }
 
 input:focus {
@@ -786,7 +841,6 @@ select {
 .slider-vol {
     width: 80px;
 }
-
 
 .btn-prev {
     background-image: url('../images/prev.png');
@@ -855,7 +909,6 @@ select {
 
 /* Upload Page */
 
-
 .upload-file {
     font-family: 'Raleway', sans-serif;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
@@ -877,7 +930,7 @@ select {
     color: #ff8522;
 }
 
-.grey-background{
+.grey-background {
     padding: 60px;
     background-color: #f5f5f5;
     display: flex;
@@ -887,12 +940,11 @@ select {
     margin-right: 15%;
 }
 
-.form-upload-left{
+.form-upload-left {
     width: 40%;
     position: relative;
     text-align: center;
 }
-
 
 /* Profile Page */
 
@@ -945,7 +997,6 @@ select {
 
 }
 
-
 #modif-profil {
     font-family: 'Raleway', sans-serif;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
@@ -976,13 +1027,13 @@ select {
     border: 2px solid #18153e;
     border-radius: 500px;
     font-weight: 600;
-    transition: color 300ms ease-in-out,background-color 300ms ease-in-out;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 .follow:hover {
     background-color: #fff;
     color: #18153e;
-    transition: color 300ms ease-in-out,background-color 300ms ease-in-out;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 #genre {
@@ -1023,9 +1074,9 @@ select {
     padding: 10px;
     line-height: 1.2;
     height: 210px;
-    webkit-box-shadow: 0px 6px 51px -14px rgba(0,0,0,0.58);
-    -moz-box-shadow: 0px 6px 51px -14px rgba(0,0,0,0.58);
-    box-shadow: 0px 6px 51px -14px rgba(0,0,0,0.58);
+    webkit-box-shadow: 0px 6px 51px -14px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 6px 51px -14px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 6px 51px -14px rgba(0, 0, 0, 0.58);
 }
 
 .chanson-search {
@@ -1057,6 +1108,7 @@ select {
     text-decoration: none;
     font-weight: 700;
 }
+
 .search-title {
     color: #ff8522;
     font-size: 1.4em;

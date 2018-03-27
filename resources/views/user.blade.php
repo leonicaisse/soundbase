@@ -7,10 +7,10 @@
         <div class="welcome-home  profile-home">
             <div class="flex-profile">
                 @auth
-                    @if($utilisateur->avatar == NULL)
+                    @if($utilisateur -> avatar == NULL)
                         <img src="{{asset('images/avatars/default.jpg')}} " class="user-profil-avatar">
                     @else
-                        <img src="{{asset('images/avatars/test.jpg')}} " class="user-profil-avatar">
+                        <img src="{{asset($utilisateur -> avatar)}} " class="user-profil-avatar">
                     @endif
                 @endauth
                 <svg height="0" width="0">
@@ -26,56 +26,72 @@
 
             </div>
             <div class="flex-profile profil-div-right">
-                <h1 class="main-title-home profile-title"><span>{{$utilisateur->name }}</span>
-                    @auth
+                @auth
+                    <h1 class="main-title-home profile-title"><span>{{$utilisateur->name }}</span>
                         @if($utilisateur->id == \Illuminate\Support\Facades\Auth::id())
 
-                            <a class="setting" href="settings" data-fancybox data-src="#settings" href="javascript:"><img
+                            <a class="setting" href="settings" data-fancybox data-src="#settings"
+                               href="javascript:"><img
                                         src="{{asset('images/settings.svg')}}" width="15px"></a>
-                            <div style="display: none;" id="settings" class="enigme">
-                                <form>
+                            <div style="display: none;" id="settings" class="setting-content">
+                                <style>
+                                    #change-avatar-label {
+                                        @if($utilisateur->avatar)
+                                            background: url({{$utilisateur->avatar}});
+                                        @else
+                                            background: url({{asset('images/avatars/default.jpg')}});
+                                        @endif
+                                    }
+                                </style>
+                                <form action='/update-profil' id="update-profil" method="POST"
+                                      enctype="multipart/form-data">
                                     <fieldset>
                                         <h4 class="blue-title">Nom d'utilisateur</h4>
-                                    <input type="text" id="username" placeholder="Nom d'utilisateur" name="username">
-                                </fieldset>
-                                    <fieldset>
-                                        <h4 class="blue-title">Mot de passe</h4>
-                                        <input type="password" id="new-password" placeholder="Mot de passe" name="new-password">
+                                        <input type="text" id="username" placeholder="{{$utilisateur->name }}"
+                                               name="username">
                                     </fieldset>
+                                    {{--<fieldset>--}}
+                                    {{--<h4 class="blue-title">Mot de passe</h4>--}}
+                                    {{--<input type="password" id="new-password" placeholder="Mot de passe"--}}
+                                    {{--name="new-password">--}}
+                                    {{--</fieldset>--}}
                                     <fieldset>
                                         <h4 class="blue-title">Avatar</h4>
-                                        <label id="avatar-label" for="avatar">Mettre à jour <br> Taille recommandée : </label>
-                                        <input type="file" name="avatar" id="avatar">
+                                        <label id="change-avatar-label" for="change-avatar">Mettre à jour <br>
+                                            Taille recommandée : 500px*500px
+                                        </label>
+                                        <input type="file" name="avatar" id="change-avatar">
                                     </fieldset>
+                                    {{ csrf_field() }}
                                     <button type="submit" id="modif-profil">enregistrer les modifications</button>
                                 </form>
                             </div>
                         @endif
-                    @endauth
-                </h1>
-                <div class="profile-follow">
-
-                    <div>
-                        @auth
-                            @if($utilisateur->id != \Illuminate\Support\Facades\Auth::id())
-                                @if(Auth::user()->jeLesSuis->contains($utilisateur->id))
-                                    <a class="follow" href="/suivre/{{$utilisateur->id}}">Suivi</a>
-                                @else
-                                    <a class="follow" href="/suivre/{{$utilisateur->id}}">Suivre</a>
-                                @endif
-                            @endif
                         @endauth
+                    </h1>
+                    <div class="profile-follow">
+
+                        <div>
+                            @auth
+                                @if($utilisateur->id != \Illuminate\Support\Facades\Auth::id())
+                                    @if(Auth::user()->jeLesSuis->contains($utilisateur->id))
+                                        <a class="follow" href="/suivre/{{$utilisateur->id}}">Suivi</a>
+                                    @else
+                                        <a class="follow" href="/suivre/{{$utilisateur->id}}">Suivre</a>
+                                    @endif
+                                @endif
+                            @endauth
+                        </div>
+                        <br/>
+                        <div id="left-border-profile">
+                            <h4 class="blue-title reduce-line"> Abonnés</h4>
+                            <span style="font-weight: bold;">{{$utilisateur->ilsMeSuivent()->count()}}</span>
+                        </div>
+                        <div id="right-border-profile">
+                            <h4 class="blue-title reduce-line">Abonnements</h4>
+                            <span style="font-weight: bold;"> {{$utilisateur->jeLesSuis()->count()}}</span>
+                        </div>
                     </div>
-                    <br/>
-                    <div id="left-border-profile">
-                        <h4 class="blue-title reduce-line"> Abonnés</h4>
-                        <span style="font-weight: bold;">{{$utilisateur->ilsMeSuivent()->count()}}</span>
-                    </div>
-                    <div id="right-border-profile">
-                        <h4 class="blue-title reduce-line">Abonnements</h4>
-                        <span style="font-weight: bold;"> {{$utilisateur->jeLesSuis()->count()}}</span>
-                    </div>
-                </div>
             </div>
         </div>
         <div id="content-home">

@@ -58,11 +58,11 @@
                                         <div class="user-account">
                                             <a href="/user/{{Auth::user()->id}}">
                                                 @auth
-                                                    @if($utilisateur->avatar == NULL)
+                                                    @if(Auth::user()->avatar == NULL)
                                                         <img src="{{asset('images/avatars/default.jpg')}} "
                                                              class="user-avatar">
                                                     @else
-                                                        <img src="{{asset('images/avatars/test.jpg')}} "
+                                                        <img src="{{ Auth::user()->avatar}}"
                                                              class="user-avatar">
                                                     @endif
                                                 @endauth

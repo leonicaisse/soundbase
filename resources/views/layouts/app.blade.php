@@ -84,10 +84,6 @@
                                                        id="link-to-home">Accueil</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" class="link-menu-home" id="link-to-music">Mes
-                                                        musiques</a>
-                                                </li>
-                                                <li>
                                                     <a href="/upload_song" class="link-menu-home" id="link-to-music">Ajouter
                                                         une musique</a>
                                                 </li>
@@ -96,7 +92,7 @@
                                                         playlists</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" class="link-menu-home"
+                                                    <a href="/abonnements" class="link-menu-home"
                                                        id="link-to-follow">Abonnements</a>
                                                 </li>
                                                 <li>

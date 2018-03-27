@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Abonnements;
 use App\User;
 use Illuminate\Http\Request;
 use App\Chanson;
@@ -41,5 +42,10 @@ class HomePage extends Controller
         $users = User::whereRaw("name LIKE CONCAT(?, '%')", [$search])->get();
         $chansons = Chanson::whereRaw("nom LIKE CONCAT(?, '%')", [$search])->get();
         return view('recherche', ['utilisateurs' => $users, 'chansons' => $chansons, 'recherche' => $search]);
+    }
+
+    public function abonnements(){
+        $users = Abonnements::whereRaw("suiveur_id = ?", [Auth::user()->id])->get();
+        return view('abonnements', ['utilisateurs' => $users]);
     }
 }

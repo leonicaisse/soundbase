@@ -25,4 +25,5 @@ Route::post('/create-song', 'Song@create')->middleware('auth');
 Route::get('/user/{id}','HomePage@user')->middleware('auth')->where('id','[0-9]+');
 Route::get('/suivre/{id}','HomePage@suivre')->middleware('auth')->where('id','[0-9]+');
 Route::get('/recherche/{search}','HomePage@recherche')->middleware('auth');
+Route::get('/abonnements','HomePage@abonnements')->middleware('auth');
 //Route::get('/musique','MusiquesList@show');

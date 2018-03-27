@@ -6,7 +6,13 @@
     <div id="main-content-home">
         <div class="welcome-home  profile-home">
             <div class="flex-profile">
-                <img src="{{asset('images/cover.jpg')}} " class="user-profil-avatar">
+                @auth
+                    @if($utilisateur->avatar == NULL)
+                        <img src="{{asset('images/avatars/default.jpg')}} " class="user-profil-avatar">
+                    @else
+                        <img src="{{asset('images/avatars/test.jpg')}} " class="user-profil-avatar">
+                    @endif
+                @endauth
                 <svg height="0" width="0">
                     <defs>
                         <clipPath id="svgPath">

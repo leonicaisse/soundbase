@@ -562,6 +562,9 @@ input[type=checkbox]:checked+label {
     content: url(../images/house.svg);
     background-size : 20px;
 }
+#link-to-home::before img{
+    witdh : 20px;
+}
 #link-to-music::before {
     padding-right: 20px;
     content: url(../images/musique.svg);

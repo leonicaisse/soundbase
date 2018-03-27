@@ -57,7 +57,7 @@
                                     @else
                                         <div class="user-account">
                                             <a href="/user/{{Auth::user()->id}}">
-                                                <img src="{{ asset('images/face.png') }}" class="user-avatar">
+                                                <img src="{{asset('images/cover.jpg')}} " class="user-avatar">
                                                 <h3 class="user-name"> {{ Auth::user()->name }}</h3>
                                             </a>
                                         </div>
@@ -65,7 +65,8 @@
                                             <ul>
                                                 <li>
                                                     <form id="search" class="search">
-                                                        <input type="text" id="input-src" class="input-src" placeholder="Rechercher des bails" required>
+                                                        <input type="text" id="input-src" class="input-src"
+                                                               placeholder="Rechercher des bails" required>
                                                         <button type="submit" id="btn-src" class="btn-src"></button>
                                                     </form>
                                                 </li>
@@ -119,10 +120,10 @@
                     </div>
                     <div class="player">
                         <div class="player-controller">
-                        <audio id="audio-player" class="audio-player" controls src="" hidden></audio>
-                        <button id="btn-prev" class="btn-prev"></button>
-                        <button id="btn-plps" class="btn-plps"></button>
-                        <button id="btn-next" class="btn-next"></button>
+                            <audio id="audio-player" class="audio-player" controls src="" hidden></audio>
+                            <button id="btn-prev" class="btn-prev"></button>
+                            <button id="btn-plps" class="btn-plps"></button>
+                            <button id="btn-next" class="btn-next"></button>
                         </div>
                         <div class="progressbar player-main">
                             <p id="current-time" class="current-time"></p>
@@ -130,10 +131,11 @@
                             <p id="duration" class="duration"></p>
                         </div>
                         <div class="song-controller">
-                        <button id="btn-mute" class="btn-mute"></button>
-                        <div class="progressbar">
-                            <input id="slider-vol" type="range" min="0" max="100" value="80" class="slider slider-vol"/>
-                        </div>
+                            <button id="btn-mute" class="btn-mute"></button>
+                            <div class="progressbar">
+                                <input id="slider-vol" type="range" min="0" max="100" value="80"
+                                       class="slider slider-vol"/>
+                            </div>
                         </div>
                     </div>
                 </div>

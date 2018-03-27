@@ -20,7 +20,21 @@
 
             </div>
             <div class="flex-profile profil-div-right">
-                <h1 class="main-title-home profile-title"><span>{{$utilisateur->name }}</span></h1>
+                <h1 class="main-title-home profile-title"><span>{{$utilisateur->name }}</span>
+                    @auth
+                        @if($utilisateur->id == \Illuminate\Support\Facades\Auth::id())
+                            <a href="settings" data-fancybox data-src="#settings" href="javascript:"><img
+                                        src="{{asset('images/settings.svg')}}" width="15px"></a>
+                            <div style="display: none;" id="settings" class="enigme">
+                                <form>
+                                    <label for="username">Nom d'utilisateur</label>
+                                    <input type="text" placeholder="Nom d'utilisateur" name="username">
+                                    <button type="submit">enregistrer les modifications</button>
+                                </form>
+                            </div>
+                        @endif
+                    @endauth
+                </h1>
                 <div class="profile-follow">
 
                     <div>

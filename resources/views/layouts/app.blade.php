@@ -14,6 +14,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{asset('css/jquery.fancybox.min.css')}}" rel="stylesheet"/>
 </head>
 
 <body>
@@ -138,6 +139,7 @@
 
         <!-- Scripts -->
             <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+            <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
             <script src="{{ asset('js/app.js') }}"></script>
 
 

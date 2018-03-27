@@ -52,6 +52,8 @@ fieldset {
 
 #song-name,
 #style,
+#username,
+#new-password,
 #song-file-label{
     font-family: 'Raleway', sans-serif;
     font-style: italic;
@@ -84,8 +86,13 @@ fieldset {
 
 }
 
+#avatar-label {
+}
+
+
 #choose-file,
-#choose-image{
+#choose-image,
+#avatar{
     display: none;
 }
 
@@ -915,6 +922,45 @@ select {
 
 .reduce-line {
     line-height: 1.1;
+}
+
+.setting {
+    outline: none;
+    cursor: pointer;
+    height: 1px;
+}
+
+.setting img {
+    cursor: pointer;
+}
+
+#settings {
+    padding: 60px;
+    background-color: #f5f5f5;
+    display: flex;
+
+}
+
+
+#modif-profil {
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    border: 2px solid #ff8522;
+    border-radius: 500px;
+    background-color: #ff8522;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#modif-profil:hover {
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    background-color: white;
+    color: #ff8522;
 }
 
 .follow {

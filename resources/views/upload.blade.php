@@ -12,7 +12,7 @@
             <form action='/create-song' id="upload" method="POST" enctype="multipart/form-data">
                 <div class="grey-background">
                     <div class="form-upload-left">
-                        <label id="choose-image-label" for="choose-image">Mettre à jour</label>
+                        <label id="choose-image-label" for="choose-image">Mettre à jour <br> Taille recommandée : </label>
                         <input type="file" name="pochette" id="choose-image">
                     </div>
                     <div class="form-upload-right">

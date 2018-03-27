@@ -57,7 +57,15 @@
                                     @else
                                         <div class="user-account">
                                             <a href="/user/{{Auth::user()->id}}">
-                                                <img src="{{asset('images/cover.jpg')}} " class="user-avatar">
+                                                @auth
+                                                    @if($utilisateur->avatar == NULL)
+                                                        <img src="{{asset('images/avatars/default.jpg')}} "
+                                                             class="user-avatar">
+                                                    @else
+                                                        <img src="{{asset('images/avatars/test.jpg')}} "
+                                                             class="user-avatar">
+                                                    @endif
+                                                @endauth
                                                 <h3 class="user-name"> {{ Auth::user()->name }}</h3>
                                             </a>
                                         </div>

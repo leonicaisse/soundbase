@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/home.css') }}" rel="stylesheet" xmlns="http://www.w3.org/1999/html">
     <body>
     <div id="main-content-home">
         <div class="welcome-home  profile-home">
@@ -29,13 +29,25 @@
                 <h1 class="main-title-home profile-title"><span>{{$utilisateur->name }}</span>
                     @auth
                         @if($utilisateur->id == \Illuminate\Support\Facades\Auth::id())
-                            <a href="settings" data-fancybox data-src="#settings" href="javascript:"><img
+
+                            <a class="setting" href="settings" data-fancybox data-src="#settings" href="javascript:"><img
                                         src="{{asset('images/settings.svg')}}" width="15px"></a>
                             <div style="display: none;" id="settings" class="enigme">
                                 <form>
-                                    <label for="username">Nom d'utilisateur</label>
-                                    <input type="text" placeholder="Nom d'utilisateur" name="username">
-                                    <button type="submit">enregistrer les modifications</button>
+                                    <fieldset>
+                                        <h4 class="blue-title">Nom d'utilisateur</h4>
+                                    <input type="text" id="username" placeholder="Nom d'utilisateur" name="username">
+                                </fieldset>
+                                    <fieldset>
+                                        <h4 class="blue-title">Mot de passe</h4>
+                                        <input type="password" id="new-password" placeholder="Mot de passe" name="new-password">
+                                    </fieldset>
+                                    <fieldset>
+                                        <h4 class="blue-title">Avatar</h4>
+                                        <label id="avatar-label" for="avatar">Mettre à jour <br> Taille recommandée : </label>
+                                        <input type="file" name="avatar" id="avatar">
+                                    </fieldset>
+                                    <button type="submit" id="modif-profil">enregistrer les modifications</button>
                                 </form>
                             </div>
                         @endif

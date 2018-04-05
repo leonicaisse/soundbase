@@ -91,11 +91,12 @@ fieldset {
 
 #change-avatar-label {
     color: white;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    text-align: center;
+    height: 150px;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
@@ -557,6 +558,7 @@ input[type=checkbox]:checked + label {
 .user-avatar {
     border-radius: 50%;
     height: 50px;
+    border : 2px solid white;
     width: auto;
     vertical-align: middle;
     cursor: pointer;
@@ -949,9 +951,9 @@ select {
 /* Profile Page */
 
 .user-profil-avatar {
-    border-radius: 500px;
     width: 150px;
     height: 150px;
+    position: absolute;
     clip-path: url(#svgPath);
 }
 
@@ -960,6 +962,14 @@ select {
     padding-top: 25px;
     padding-bottom: 35px;
     padding-left: 15%;
+}
+
+.avatar-div {
+    width: 152px;
+    height: 152px;
+    background-color: #ff8522;
+    clip-path: url(#svgPath);
+    position: relative;
 }
 
 .flex-profile {
@@ -991,6 +1001,8 @@ select {
 }
 
 #settings {
+    width: 40vw;
+    height: 50vh;
     padding: 60px;
     background-color: #f5f5f5;
     display: flex;
@@ -1009,7 +1021,7 @@ select {
     font-weight: bold;
     font-size: 1em;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 150px;
 }
 
 #modif-profil:hover {
@@ -1107,9 +1119,17 @@ select {
     white-space: nowrap;
     text-decoration: none;
     font-weight: 700;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+
+}
+
+.username:hover {
+    color: #ff8522;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .search-title {
     color: #ff8522;
     font-size: 1.4em;
 }
+

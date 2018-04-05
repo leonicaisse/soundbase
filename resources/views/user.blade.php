@@ -5,7 +5,7 @@
     <body>
     <div id="main-content-home">
         <div class="welcome-home  profile-home">
-            <div class="flex-profile">
+            <div class="flex-profile avatar-div">
                 @auth
                     @if($utilisateur -> avatar == NULL)
                         <img src="{{asset('images/avatars/default.jpg')}} " class="user-profil-avatar">
@@ -38,8 +38,14 @@
                                     #change-avatar-label {
                                         @if($utilisateur->avatar)
                                             background: url({{$utilisateur->avatar}});
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center;
                                         @else
                                             background: url({{asset('images/avatars/default.jpg')}});
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center;
                                         @endif
                                     }
                                 </style>
@@ -57,13 +63,16 @@
                                     {{--</fieldset>--}}
                                     <fieldset>
                                         <h4 class="blue-title">Avatar</h4>
+                                        <h4 class="blue-title">Avatar</h4>
                                         <label id="change-avatar-label" for="change-avatar">Mettre à jour <br>
                                             Taille recommandée : 500px*500px
                                         </label>
                                         <input type="file" name="avatar" id="change-avatar">
                                     </fieldset>
                                     {{ csrf_field() }}
+                                    <div style="text-align: center">
                                     <button type="submit" id="modif-profil">enregistrer les modifications</button>
+                                    </div>
                                 </form>
                             </div>
                         @endif

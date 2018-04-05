@@ -15,6 +15,12 @@
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{asset('css/jquery.fancybox.min.css')}}" rel="stylesheet"/>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+
 </head>
 
 <body>
@@ -74,7 +80,7 @@
                                                 <li>
                                                     <form id="search" class="search">
                                                         <input type="text" id="input-src" class="input-src"
-                                                               placeholder="Rechercher des bails" required>
+                                                               placeholder="Rechercher..." required>
                                                         <button type="submit" id="btn-src" class="btn-src"></button>
                                                     </form>
                                                 </li>
@@ -88,16 +94,12 @@
                                                         une musique</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" class="link-menu-home" id="link-to-playlist">Mes
+                                                    <a href="#" class="link-menu-home" id="link-to-playlist">[WIP] Mes
                                                         playlists</a>
                                                 </li>
                                                 <li>
                                                     <a href="/abonnements" class="link-menu-home"
                                                        id="link-to-follow">Abonnements</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="link-menu-home"
-                                                       id="link-to-notif">Notifications</a>
                                                 </li>
                                                 <li>
                                                     <a href="{{ route('logout') }}"
@@ -143,16 +145,9 @@
                         </div>
                     </div>
                 </div>
-        @endauth
+@endauth
 
-        @yield('content')
-
-        <!-- Scripts -->
-            <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-            <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
-            <script src="{{ asset('js/app.js') }}"></script>
-
-
+@yield('content')
 </body>
 
 </html>

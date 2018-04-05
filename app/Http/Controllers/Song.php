@@ -31,4 +31,12 @@ class Song extends Controller
         }
         return redirect("/home");
     }
+
+    public function delete($song_id)
+    {
+        if (Auth::id() == Chanson::find($song_id)->utilisateur_id) {
+            Chanson::find($song_id)->delete();
+        }
+        return back();
+    }
 }
